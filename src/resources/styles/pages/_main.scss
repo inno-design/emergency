@@ -1,0 +1,73 @@
+.container_main {
+  background-color: #f7f7f7;
+
+  .section_tit {
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
+
+
+.main_visual {
+  height: 900px;
+  background-color: #1653c6;
+}
+
+.main_notice {
+  padding: 100px 0;
+  background-color: #fff;
+
+  .section_tit {
+    font-size: 44px;
+  }
+}
+
+.main_card {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  margin-top: -15%;
+
+  .card_item {
+    position: relative;
+    flex-grow: 1;
+    margin: 0 23px;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: background-color .2s, box-shadow .2s;
+
+    &::before {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: $c_primary;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+    }
+  }
+
+  .card_cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.main_service {
+  padding: 100px 0;
+
+  .section_tit {
+    text-align: center
+  }
+}

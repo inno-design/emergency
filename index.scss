@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@import "src/resources/styles/base/normalize_modify.css";
+@import "src/resources/styles/base/fonts";
+@import "src/resources/styles/base/variables";
+@import "src/resources/styles/base/mixins";
+@import "src/resources/styles/base/devices";
+@import "src/resources/styles/base/animations";
+
+@import "src/resources/styles/componetns/buttons";
+@import "src/resources/styles/componetns/form";
+@import "src/resources/styles/componetns/inputs";
+
+@import "src/resources/styles/layouts/layouts";
+@import "src/resources/styles/layouts/nav";
+
+@import "src/resources/styles/pages/main";
