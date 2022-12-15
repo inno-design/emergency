@@ -512,7 +512,7 @@ textarea,
   width: 100%;
 }
 
-.pop-wrap {
+.pop_wrap {
   z-index: 100;
   position: fixed;
   top: 0;
@@ -525,7 +525,7 @@ textarea,
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.pop-box {
+.pop_box {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -537,7 +537,7 @@ textarea,
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.22);
 }
 
-.pop-header {
+.pop_header {
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -546,20 +546,20 @@ textarea,
   padding-right: 40px;
 }
 
-.pop-header-title {
+.pop_header_title {
   font-size: 22px;
 }
 
-.pop-container {
+.pop_container {
   flex-grow: 1;
   overflow-y: auto;
 }
 
-.pop-content {
+.pop_content {
   padding: 0 40px 40px;
 }
 
-.pop-footer {
+.pop_footer {
   flex-shrink: 0;
   display: flex;
   justify-content: center;

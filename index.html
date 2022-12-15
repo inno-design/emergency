@@ -116,8 +116,8 @@
               (클라우드 이용료 지원)
             </p>
             <div class="main_visual_btns">
-              <button type="button" class="btn_service">서비스 신청하기</button>
-              <button type="button" class="btn_sw">Open S/W 등록하기</button>
+              <button type="button" class="btn_service js-servicePopBtn">서비스 신청하기</button>
+              <button type="button" class="btn_sw js-swPopBtn">Open S/W 등록하기</button>
             </div>
           </div>
         </div>
@@ -320,13 +320,13 @@
   </footer>
 
   <!-- 서비스 신청하기 dialog start -->
-  <div class="pop-wrap" style="display: none">
-    <div class="pop-box">
-      <div class="pop-header">
-        <h2 class="pop-header-title">서비스 신청하기</h2>
+  <div class="pop_wrap" style="display: none" id="pop01">
+    <div class="pop_box">
+      <div class="pop_header">
+        <h2 class="pop_header_title">서비스 신청하기</h2>
       </div>
-      <div class="pop-container">
-        <div class="pop-content">
+      <div class="pop_container">
+        <div class="pop_content">
           <form id="tmpid01" method="post">
             <ul class="list_form">
               <li>
@@ -356,7 +356,7 @@
           </form>
         </div>
       </div>
-      <div class="pop-footer">
+      <div class="pop_footer">
         <button type="button" class="btn_pop cancel">취소</button>
         <button type="submit" form="tmpid01" class="btn_pop submit">확인</button>
       </div>
@@ -365,13 +365,13 @@
   <!-- 서비스 신청하기 dialog end -->
 
   <!-- sw 등록하기 dialog start -->
-  <div class="pop-wrap">
-    <div class="pop-box">
-      <div class="pop-header">
-        <h2 class="pop-header-title">Open S/W 등록하기</h2>
+  <div class="pop_wrap" style="display: none" id="pop02">
+    <div class="pop_box">
+      <div class="pop_header">
+        <h2 class="pop_header_title">Open S/W 등록하기</h2>
       </div>
-      <div class="pop-container">
-        <div class="pop-content">
+      <div class="pop_container">
+        <div class="pop_content">
           <form id="tmp02" method="post">
             <ul class="list_form">
               <li>
@@ -394,7 +394,7 @@
           </form>
         </div>
       </div>
-      <div class="pop-footer">
+      <div class="pop_footer">
         <button type="button" class="btn_pop cancel">취소</button>
         <button type="submit" form="tmp02" class="btn_pop submit">확인</button>
       </div>
@@ -435,6 +435,7 @@
   });
 </script>
 
+<!-- custom select -->
 <script src="src/resources/js/select.js"></script>
 
 </body>
