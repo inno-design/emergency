@@ -100,6 +100,7 @@
   </header>
 
   <main class="container_main">
+    <!-- main visual swiper start -->
     <section class="main_visual swiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
@@ -133,8 +134,10 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+    <!-- main visual swiper end -->
 
     <div class="content_wrapper">
+      <!-- 3 card start -->
       <section class="main_card">
         <div class="main_card_item">
           <div class="card_cont">
@@ -158,7 +161,9 @@
           </div>
         </div>
       </section>
+      <!-- 3 card end -->
 
+      <!-- 서비스 전체보기 start -->
       <div class="main_service_wrapper">
         <div class="main_service js-service">
           <button type="button" class="main_service_toggle js-serviceToggleBtn">서비스 전체 보기</button>
@@ -245,9 +250,11 @@
           </div>
         </div>
       </div>
+      <!-- 서비스 전체보기 end -->
     </div>
   </main>
 
+  <!-- 공지사항 start -->
   <section class="main_notice">
     <div class="content_wrapper">
       <div class="section_titbar">
@@ -293,6 +300,7 @@
       </ul>
     </div>
   </section>
+  <!-- 공지사항 end -->
 
   <footer class="footer">
     <div class="content_wrapper">
@@ -310,6 +318,89 @@
       </p>
     </div>
   </footer>
+
+  <!-- 서비스 신청하기 dialog start -->
+  <div class="pop-wrap" style="display: none">
+    <div class="pop-box">
+      <div class="pop-header">
+        <h2 class="pop-header-title">서비스 신청하기</h2>
+      </div>
+      <div class="pop-container">
+        <div class="pop-content">
+          <form id="tmpid01" method="post">
+            <ul class="list_form">
+              <li>
+                <label for="name" class="label_title">사용자 이름</label>
+                <input type="text" id="name" placeholder="사용자 이름을 입력해주세요." class="form_textfield">
+              </li>
+              <li>
+                <label for="id" class="label_title">사용자 아이디</label>
+                <input type="text" id="id" placeholder="사용자 아이디를 입력해주세요." class="form_textfield">
+              </li>
+              <li>
+                <label for="aim" class="label_title">사용 목적</label>
+                <input type="text" id="aim" placeholder="사용 목적을 입력해주세요." class="form_textfield">
+              </li>
+              <li>
+                <label for="company" class="label_title">소속 선택</label>
+                <div class="custom-select">
+                  <select id="company">
+                    <option value="0">소속을 선택해주세요.</option>
+                    <option value="1">소속 1</option>
+                    <option value="2">소속 2</option>
+                    <option value="3">소속 3</option>
+                  </select>
+                </div>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div class="pop-footer">
+        <button type="button" class="btn_pop cancel">취소</button>
+        <button type="submit" form="tmpid01" class="btn_pop submit">확인</button>
+      </div>
+    </div>
+  </div>
+  <!-- 서비스 신청하기 dialog end -->
+
+  <!-- sw 등록하기 dialog start -->
+  <div class="pop-wrap">
+    <div class="pop-box">
+      <div class="pop-header">
+        <h2 class="pop-header-title">Open S/W 등록하기</h2>
+      </div>
+      <div class="pop-container">
+        <div class="pop-content">
+          <form id="tmp02" method="post">
+            <ul class="list_form">
+              <li>
+                <label for="email" class="label_title">이메일</label>
+                <input type="text" id="email" placeholder="이메일을 입력해주세요." class="form_textfield">
+              </li>
+              <li>
+                <label for="title" class="label_title">제목</label>
+                <input type="text" id="title" placeholder="제목을 입력해주세요." class="form_textfield">
+              </li>
+              <li>
+                <label for="git" class="label_title">Github URL</label>
+                <input type="text" id="git" placeholder="Github URL을 입력해주세요." class="form_textfield">
+              </li>
+              <li>
+                <label for="comment" class="label_title">설명</label>
+                <textarea id="comment" cols="30" rows="5" class="form_textarea" placeholder="서비스에 대한 설명을 50자 이내로 입력해주세요."></textarea>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div class="pop-footer">
+        <button type="button" class="btn_pop cancel">취소</button>
+        <button type="submit" form="tmp02" class="btn_pop submit">확인</button>
+      </div>
+    </div>
+  </div>
+  <!-- sw 등록하기 dialog end -->
 </div>
 
 <!-- Initialize Swiper -->
@@ -332,7 +423,10 @@
       disableOnInteraction: false,
     },
   });
+</script>
 
+<!--서비스 전체보기 열기/닫기-->
+<script>
   const serviceToggleBtns = document.querySelector('.js-serviceToggleBtn');
   const serviceConts = document.querySelector('.js-service');
 
@@ -340,5 +434,8 @@
     serviceConts.classList.toggle('open');
   });
 </script>
+
+<script src="src/resources/js/select.js"></script>
+
 </body>
 </html>

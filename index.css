@@ -404,6 +404,175 @@ textarea,
   font-weight: bold;
 }
 
+.btn_pop {
+  width: 110px;
+  height: 42px;
+  margin: 0 2px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.btn_pop.submit {
+  background-color: #0084ff;
+  color: #fff;
+}
+.btn_pop.cancel {
+  border: 1px solid #222;
+}
+
+.form_textfield {
+  width: 100%;
+  height: 2.75rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding-left: 10px;
+  background-color: #fff;
+  color: #555;
+  font-size: 14px;
+}
+
+.form_textarea {
+  width: 100%;
+  min-height: 2.75rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #fff;
+  color: #555;
+  font-size: 14px;
+}
+
+/* select */
+.custom-select {
+  position: relative;
+  display: inline-block;
+  height: 2.75rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  /* Style the arrow inside the select element: */
+  /* Point the arrow upwards when the select box is open (active): */
+  /* style the items (options), including the selected item: */
+  /* Style items (options): */
+  /* Hide the items when the select box is closed: */
+}
+.custom-select select {
+  display: none;
+}
+.custom-select .select-selected:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 34px;
+  height: 5px;
+  margin-top: -3px;
+  background: url(src/resources/images/icon/ico_dropdown.png) no-repeat center center;
+  opacity: 0.25;
+}
+.custom-select .select-selected.select-arrow-active:after {
+  opacity: 1;
+}
+.custom-select .select-items div, .custom-select .select-selected {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.custom-select .select-selected {
+  height: 100%;
+}
+.custom-select .select-items div {
+  height: 3em;
+}
+.custom-select .select-items {
+  z-index: 99;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 3px;
+  min-width: 100%;
+  border-radius: 4px;
+  border: 1px solid #222;
+  background-color: #fff;
+  overflow: hidden;
+}
+.custom-select .select-items div:not(:first-child) {
+  border-top: 1px solid #e8eef5;
+}
+.custom-select .select-hide {
+  display: none;
+}
+.custom-select .select-items div:hover, .custom-select .same-as-selected {
+  background-color: #f2f9ff;
+  color: #0084ff;
+}
+
+.list_form .custom-select {
+  width: 100%;
+}
+
+.pop-wrap {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pop-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 460px;
+  min-height: 300px;
+  max-height: calc(100% - 64px);
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.22);
+}
+
+.pop-header {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  height: 92px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.pop-header-title {
+  font-size: 22px;
+}
+
+.pop-container {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.pop-content {
+  padding: 0 40px 40px;
+}
+
+.pop-footer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.label_title {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
 body,
 button,
 input,
@@ -959,6 +1128,16 @@ table {
   height: 6px;
   border-radius: 50%;
   background-color: currentColor;
+}
+
+.list_form > li:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+.label_title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=index.css.map */

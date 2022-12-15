@@ -1,0 +1,13 @@
+.list_form {
+  & > li {
+    &:not(:first-of-type) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.label_title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
