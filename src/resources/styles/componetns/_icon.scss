@@ -1,0 +1,51 @@
+.ico_img {
+
+  &.login {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 9px;
+    border-radius: 50%;
+    background-color: #ccc;
+
+    img {
+      width: 45%;
+    }
+  }
+}
+
+.ico_menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2px;
+  margin-left: -2px;
+  display: block;
+  color: #909090;
+
+  &,
+  &::before,
+  &::after {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: currentColor;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  &::after {
+    bottom: -8px;
+  }
+}

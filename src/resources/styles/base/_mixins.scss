@@ -1,0 +1,77 @@
+@mixin clear {
+  &:after {
+    content: '';
+    display: block;
+    clear: both
+  }
+}
+
+@mixin ir {
+  overflow: hidden;
+  text-indent: -9999px;
+  white-space: nowrap;
+}
+
+@mixin ir_btn {
+  position: absolute;
+  top: auto;
+  left: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+}
+@mixin ir_wa() {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+
+@mixin font_size($added) {
+  @if $rootSize == 12px {
+    font-size: (1+(0.083*$added))+rem;
+  }
+  @if $rootSize == 13px {
+    font-size: (1+(0.077*$added))+rem;
+  }
+  @if $rootSize == 14px {
+    font-size: (1+(0.071*$added))+rem;
+  }
+}
+
+@mixin bubble($border-w,$color,$position) {
+  position: absolute;
+  &::after {
+    content: '';
+    position: absolute;
+    border-color: transparent;
+    border-style: solid;
+    border-width: $border-w;
+    @if $position == top {
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom-color: $color;
+    }
+    @if $position == bottom {
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-top-color: $color;
+    }
+    @if $position == left {
+      right: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      border-right-color: $color;
+    }
+    @if $position == right {
+      left: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      border-left-color: $color;
+    }
+  }
+}

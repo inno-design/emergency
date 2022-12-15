@@ -40,7 +40,8 @@ table {
   }
 }
 
-.header_logo {
+.header_logo,
+.footer_logo {
   img {
     display: block;
   }
@@ -54,16 +55,6 @@ table {
 .header_login {
   display: flex;
   align-items: center;
-
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-right: 9px;
-    border-radius: 50%;
-    background: #ccc url(src/resources/images/layouts/ico_user.png) no-repeat center center;
-  }
 }
 
 .footer {
@@ -75,10 +66,6 @@ table {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
-}
-
-.footer_nav {
 
 }
 
@@ -110,4 +97,60 @@ table {
 .copyright {
   font-size: 13px;
   color: #959595;
+}
+
+
+.container_sub {
+  padding: 4.5rem 0;
+  border-top: 1px solid #dcdcdc;
+}
+
+.header_sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.sub_title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.sub_breadcrumbs {
+  display: flex;
+  font-size: 15px;
+
+  .item {
+    position: relative;
+
+    &:not(:last-child) {
+      padding-right: 40px;
+      color: #898989;
+
+      &::after {
+        content: '';
+        position: absolute;
+        border-top: 2px solid #dedede;
+        border-right: 2px solid #dedede;
+        transform: rotate(45deg);
+        right: 18px;
+        top: 6px;
+        box-sizing: border-box;
+        display: block;
+        width: 8px;
+        height: 8px
+      }
+    }
+    &:last-child {
+      font-weight: bolder
+    }
+  }
+}
+
+.section_tit {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 2rem;
 }

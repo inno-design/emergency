@@ -7,7 +7,9 @@
 @import "src/resources/styles/base/devices";
 @import "src/resources/styles/base/animations";
 
+@import "src/resources/styles/componetns/icon";
 @import "src/resources/styles/componetns/buttons";
+@import "src/resources/styles/componetns/tabs";
 @import "src/resources/styles/componetns/inputs";
 @import "src/resources/styles/componetns/select";
 @import "src/resources/styles/componetns/popup";
@@ -17,3 +19,4 @@
 
 @import "src/resources/styles/pages/main";
 @import "src/resources/styles/pages/popupContents";
+@import "src/resources/styles/pages/service";
