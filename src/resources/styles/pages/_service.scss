@@ -1,9 +1,4 @@
 .service_dashboard {
-  padding-bottom: 3.750rem;
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.service_dashboard_wrap {
   display: flex;
   flex-wrap: wrap;
   margin: -20px 0 0 -20px;
@@ -65,26 +60,46 @@
 
 .service_app_list {
   & > li {
-    display: flex;
-    align-items: center;
+    position: relative;
     height: 64px;
-    border-radius: 8px;
-    border: 1px solid #dcdcdc;
 
     &:not(:first-child) {
       margin-top: 8px;
+    }
+
+
+  }
+
+  .service_app_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 48px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    transition: border-color .2s;
+
+    &:hover {
+      border-color: #222;
+    }
+  }
+
+  .btn_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 48px;
+
+    &:hover span {
+      color: #222;
     }
   }
 
   .name {
     padding: 20px 25px;
-    margin-right: auto;
     font-size: 18px;
     font-weight: 500;
-
-    &:hover {
-      color: $c_primary;
-    }
   }
 
   .status {
@@ -111,4 +126,89 @@
       border-color: #ff6142
     }
   }
+}
+
+.service_app_pop {
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+  top: calc(100% + 5px);
+  right: -1px;
+  width: 198px;
+  border: 1px solid #222;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 3px 3px 16px rgba(0,0,0,0.15);
+  font-size: 15px;
+
+  .list_action {
+    padding: 7px 20px;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 45px;
+
+      &:not(:first-of-type) {
+        border-top: 1px dotted #dedede;
+      }
+    }
+  }
+
+  .btn_icon {
+    margin-right: -8px;
+  }
+
+  .list_info {
+    padding: 12px 20px;
+    border-top: 1px solid #dedede;
+    background-color: #f8f8f8;
+
+    li {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 37px;
+
+      &:first-of-type .value { color: #5189fa; }
+      &:nth-of-type(2) .value { color: #00cba4; }
+      &:nth-of-type(3) .value { color: #ff735c; }
+
+      &::before {
+        content: '';
+        flex-grow: 1;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        left: 0;
+        margin-top: -1px;
+        border-top: 1px dotted #dedede;
+      }
+    }
+
+    .label,
+    .value {
+      position: relative;
+      background-color: #f8f8f8;
+    }
+
+    .label {
+      padding-right: 12px;
+    }
+
+    .value {
+      padding-left: 12px;
+      font-weight: bold;
+    }
+
+    .unit {
+      padding-left: 4px;
+      font-weight: 400;
+      color: #222;
+    }
+  }
+
+  &.hide { display: none }
 }

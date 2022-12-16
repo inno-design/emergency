@@ -3,12 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>위기대응 클라우드 플랫폼</title>
+  <title>My Service - 위기대응 클라우드 플랫폼</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 
   <link rel="stylesheet" href="../../../index.css">
-  <link rel="stylesheet" href="../../resources/js/vendors/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -121,9 +120,9 @@
           <a href="service_account.html" class="btn">Account</a>
         </div>
 
-        <section class="service_dashboard">
+        <section>
           <h3 class="section_tit">PaaS</h3>
-          <div class="service_dashboard_wrap">
+          <div class="service_dashboard">
             <div class="panel c1">
               <div class="label">Apps Started</div>
               <div class="value">5</div>
@@ -151,62 +150,120 @@
           </div>
         </section>
 
+        <hr class="line_section">
+
         <section class="service_app">
+          <!-- Application start -->
           <div class="section">
             <h3 class="section_tit">Application</h3>
             <ul class="service_app_list">
               <li>
-                <a href="service_app.html" class="name">Sample 001</a>
-                <span class="status start">Started</span>
-                <button type="button" class="btn_menu"><span class="ico_menu"></span></button>
+                <a href="service_app.html" class="service_app_box">
+                  <span class="name">Sample 001</span>
+                  <span class="status start">Started</span>
+                </a>
+                <button type="button" class="btn_menu" onclick="popMenu()"><span class="ico menu"></span></button>
+
+                <!-- service pop menu start -->
+                <div class="service_app_pop hide js-popMenu">
+                  <ul class="list_action">
+                    <li>
+                      <span class="label">앱 이름 변경</span>
+                      <button type="button" class="btn_icon"><span class="ico edit">edit</span></button>
+                    </li>
+                    <li>
+                      <span class="label">정지</span>
+                      <button type="button" class="btn_icon"><span class="ico pause">stop</span></button>
+                    </li>
+                    <li>
+                      <span class="label">삭제</span>
+                      <button type="button" class="btn_icon"><span class="ico del">delete</span></button>
+                    </li>
+                  </ul>
+                  <ul class="list_info">
+                    <li>
+                      <span class="label">인스턴스</span>
+                      <span class="value">7</span>
+                    </li>
+                    <li>
+                      <span class="label">디스크</span>
+                      <span class="value">512<span class="unit">MB</span></span>
+                    </li>
+                    <li>
+                      <span class="label">메모리</span>
+                      <span class="value">4<span class="unit">GB</span></span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- service pop menu end -->
               </li>
               <li>
-                <a href="service_app.html" class="name">Sample 002</a>
-                <span class="status start">Started</span>
-                <button type="button" class="btn_menu"><span class="ico_menu"></span></button>
+                <a href="service_app.html" class="service_app_box">
+                  <span class="name">Sample 002</span>
+                  <span class="status start">Started</span>
+                </a>
+                <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
               <li>
-                <a href="service_app.html" class="name">Sample 003</a>
-                <span class="status stop">Stopped</span>
-                <button type="button" class="btn_menu"><span class="ico_menu"></span></button>
+                <a href="service_app.html" class="service_app_box">
+                  <span class="name">Sample 003</span>
+                  <span class="status stop">Stopped</span>
+                </a>
+                <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
               <li>
-                <a href="service_app.html" class="name">Sample 004</a>
-                <span class="status start">Started</span>
-                <button type="button" class="btn_menu"><span class="ico_menu"></span></button>
+                <a href="service_app.html" class="service_app_box">
+                  <span class="name">Sample 004</span>
+                  <span class="status start">Started</span>
+                </a>
+                <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
               <li>
-                <a href="service_app.html" class="name">Sample 005</a>
-                <span class="status stop">Stopped</span>
-                <button type="button" class="btn_menu"><span class="ico_menu"></span></button>
+                <a href="service_app.html" class="service_app_box">
+                  <span class="name">Sample 005</span>
+                  <span class="status stop">Stopped</span>
+                </a>
+                <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
             </ul>
           </div>
+          <!-- Application end -->
+
+          <!-- Services start -->
           <div class="section">
             <h3 class="section_tit">Services</h3>
             <ul class="service_app_list">
               <li>
-                <a href="service_app.html" class="name">MS-SQL</a>
-                <span class="status start">Started</span>
-                <button type="button" class="btn_menu"><span class="ico_menu"></span></button>
+                <a href="service_app.html" class="service_app_box">
+                  <span class="name">MS-SQL</span>
+                  <span class="status stop">Stopped</span>
+                </a>
+                <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
               <li>
-                <a href="service_app.html" class="name">eGovFramework</a>
-                <span class="status start">Started</span>
-                <button type="button" class="btn_menu"><span class="ico_menu"></span></button>
+                <a href="service_app.html" class="service_app_box">
+                  <span class="name">eGovFramework</span>
+                  <span class="status stop">Stopped</span>
+                </a>
+                <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
               <li>
-                <a href="service_app.html" class="name">Management System</a>
-                <span class="status stop">Stopped</span>
-                <button type="button" class="btn_menu"><span class="ico_menu"></span></button>
+                <a href="service_app.html" class="service_app_box">
+                  <span class="name">Management System</span>
+                  <span class="status stop">Stopped</span>
+                </a>
+                <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
               <li>
-                <a href="service_app.html" class="name">Cloud Foundry Java</a>
-                <span class="status start">Started</span>
-                <button type="button" class="btn_menu"><span class="ico_menu"></span></button>
+                <a href="service_app.html" class="service_app_box">
+                  <span class="name">Cloud Foundry Java</span>
+                  <span class="status stop">Stopped</span>
+                </a>
+                <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
             </ul>
           </div>
+          <!-- Services end -->
         </section>
       </div>
       <!-- tab end -->
@@ -229,94 +286,17 @@
       </p>
     </div>
   </footer>
-
-  <!-- 서비스 신청하기 dialog start -->
-  <div class="pop_wrap" style="display: none" id="pop01">
-    <div class="pop_box">
-      <div class="pop_header">
-        <h2 class="pop_header_title">서비스 신청하기</h2>
-      </div>
-      <div class="pop_container">
-        <div class="pop_content">
-          <form id="tmpid01" method="post">
-            <ul class="list_form">
-              <li>
-                <label for="name" class="label_title">사용자 이름</label>
-                <input type="text" id="name" placeholder="사용자 이름을 입력해주세요." class="form_textfield">
-              </li>
-              <li>
-                <label for="id" class="label_title">사용자 아이디</label>
-                <input type="text" id="id" placeholder="사용자 아이디를 입력해주세요." class="form_textfield">
-              </li>
-              <li>
-                <label for="aim" class="label_title">사용 목적</label>
-                <input type="text" id="aim" placeholder="사용 목적을 입력해주세요." class="form_textfield">
-              </li>
-              <li>
-                <label for="company" class="label_title">소속 선택</label>
-                <div class="custom-select">
-                  <select id="company">
-                    <option value="0">소속을 선택해주세요.</option>
-                    <option value="1">소속 1</option>
-                    <option value="2">소속 2</option>
-                    <option value="3">소속 3</option>
-                  </select>
-                </div>
-              </li>
-            </ul>
-          </form>
-        </div>
-      </div>
-      <div class="pop_footer">
-        <button type="button" class="btn_pop cancel">취소</button>
-        <button type="submit" form="tmpid01" class="btn_pop submit">확인</button>
-      </div>
-    </div>
-  </div>
-  <!-- 서비스 신청하기 dialog end -->
-
-  <!-- sw 등록하기 dialog start -->
-  <div class="pop_wrap" style="display: none" id="pop02">
-    <div class="pop_box">
-      <div class="pop_header">
-        <h2 class="pop_header_title">Open S/W 등록하기</h2>
-      </div>
-      <div class="pop_container">
-        <div class="pop_content">
-          <form id="tmp02" method="post">
-            <ul class="list_form">
-              <li>
-                <label for="email" class="label_title">이메일</label>
-                <input type="text" id="email" placeholder="이메일을 입력해주세요." class="form_textfield">
-              </li>
-              <li>
-                <label for="title" class="label_title">제목</label>
-                <input type="text" id="title" placeholder="제목을 입력해주세요." class="form_textfield">
-              </li>
-              <li>
-                <label for="git" class="label_title">Github URL</label>
-                <input type="text" id="git" placeholder="Github URL을 입력해주세요." class="form_textfield">
-              </li>
-              <li>
-                <label for="comment" class="label_title">설명</label>
-                <textarea id="comment" cols="30" rows="5" class="form_textarea"
-                          placeholder="서비스에 대한 설명을 50자 이내로 입력해주세요."></textarea>
-              </li>
-            </ul>
-          </form>
-        </div>
-      </div>
-      <div class="pop_footer">
-        <button type="button" class="btn_pop cancel">취소</button>
-        <button type="submit" form="tmp02" class="btn_pop submit">확인</button>
-      </div>
-    </div>
-  </div>
-  <!-- sw 등록하기 dialog end -->
 </div>
 
 <!-- custom select -->
 <script src="../../resources/js/select.js"></script>
+
+<!-- app pop  -->
+<script>
+  const popMenu = function (){
+    document.querySelector('.js-popMenu').classList.toggle('hide');
+  }
+</script>
 
 </body>
 </html>

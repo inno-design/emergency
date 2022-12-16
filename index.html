@@ -21,8 +21,8 @@
           <a href="/"><img src="src/resources/images/layouts/logo_header.png" alt="위기대응 클라우드 플랫폼"></a>
         </h1>
         <div class="header_util">
-          <a href="../membership/login.html" class="header_login">
-            <i class="ico_img login"><img src="../../resources/images/icon/ico_user.svg" alt="login"></i>로그인
+          <a href="src/pages/membership/login.html" class="header_login">
+            <i class="ico_img login"><img src="src/resources/images/icon/ico_user.svg" alt="login"></i>로그인
           </a>
         </div>
       </div>
@@ -118,8 +118,8 @@
               (클라우드 이용료 지원)
             </p>
             <div class="main_visual_btns">
-              <button type="button" class="btn_service js-servicePopBtn">서비스 신청하기</button>
-              <button type="button" class="btn_sw js-swPopBtn">Open S/W 등록하기</button>
+              <button type="button" class="btn_service" onclick="dialogOpen('pop01')">서비스 신청하기</button>
+              <button type="button" class="btn_sw" onclick="dialogOpen('pop02')">Open S/W 등록하기</button>
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@
       <!-- 서비스 전체보기 start -->
       <div class="main_service_wrapper">
         <div class="main_service js-service">
-          <button type="button" class="main_service_toggle js-serviceToggleBtn">서비스 전체 보기</button>
+          <button type="button" class="main_service_toggle" onclick="serviceToggle()">서비스 전체 보기</button>
 
           <div class="main_service_container">
             <section class="main_service_section">
@@ -322,7 +322,7 @@
   </footer>
 
   <!-- 서비스 신청하기 dialog start -->
-  <div class="pop_wrap" style="display: none" id="pop01">
+  <div class="pop_wrap hide" id="pop01">
     <div class="pop_box">
       <div class="pop_header">
         <h2 class="pop_header_title">서비스 신청하기</h2>
@@ -359,7 +359,7 @@
         </div>
       </div>
       <div class="pop_footer">
-        <button type="button" class="btn_pop cancel">취소</button>
+        <button type="button" class="btn_pop cancel" onclick="dialogClose('pop01')">취소</button>
         <button type="submit" form="tmpid01" class="btn_pop submit">확인</button>
       </div>
     </div>
@@ -367,7 +367,7 @@
   <!-- 서비스 신청하기 dialog end -->
 
   <!-- sw 등록하기 dialog start -->
-  <div class="pop_wrap" style="display: none" id="pop02">
+  <div class="pop_wrap hide" id="pop02">
     <div class="pop_box">
       <div class="pop_header">
         <h2 class="pop_header_title">Open S/W 등록하기</h2>
@@ -397,7 +397,7 @@
         </div>
       </div>
       <div class="pop_footer">
-        <button type="button" class="btn_pop cancel">취소</button>
+        <button type="button" class="btn_pop cancel" onclick="dialogClose('pop02')">취소</button>
         <button type="submit" form="tmp02" class="btn_pop submit">확인</button>
       </div>
     </div>
@@ -427,14 +427,24 @@
   });
 </script>
 
-<!--서비스 전체보기 열기/닫기-->
 <script>
-  const serviceToggleBtns = document.querySelector('.js-serviceToggleBtn');
-  const serviceConts = document.querySelector('.js-service');
+  <!-- 사용된 스크립트는 이해를 돕기 위한 예시용입니다 -->
+  <!--서비스 전체보기 열기/닫기-->
+  const serviceToggle = function (){
+    document.querySelector('.js-service').classList.toggle('open');
+  }
 
-  serviceToggleBtns.addEventListener('click', function (){
-    serviceConts.classList.toggle('open');
-  });
+  <!--Dialog 열기/닫기-->
+  const dialogOpen = function(id){
+    document.getElementById(id).classList.remove("hide");
+    document.body.style.overflow = "hidden";
+  }
+
+  const dialogClose = function(id){
+    document.getElementById(id).classList.add("hide");
+    document.body.style.overflow = "auto";
+  }
+
 </script>
 
 <!-- custom select -->

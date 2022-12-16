@@ -103,6 +103,11 @@ table {
 .container_sub {
   padding: 4.5rem 0;
   border-top: 1px solid #dcdcdc;
+
+  .section_tit {
+    margin-bottom: 1em;
+    font-size: 2rem;
+  }
 }
 
 .header_sub {
@@ -149,8 +154,8 @@ table {
   }
 }
 
-.section_tit {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  font-size: 2rem;
+.line_section {
+  margin-top: 3.750rem;
+  margin-bottom: 3rem;
+  border-color: #e6e6e6;
 }
