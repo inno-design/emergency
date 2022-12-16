@@ -13,13 +13,40 @@
 }
 
 .btn_comm {
+  min-width: 72px;
+  height: 36px;
+  padding: 0 20px;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
 
-  &.primary {
-
+  &.submit {
+    border: 0;
+    background-color: #008aff;
+    color: #fff;
   }
 
-  &.secondary {
+  &.cancel {
+    border-color: #222;
+  }
 
+  &.err {
+    border: 0;
+    background-color: #fdf3f2;
+    color: #e76055;
+    transition: background-color .2s, color .2s;
+
+    &:hover {
+      background-color: #e76055;
+      color: #fff;
+    }
+  }
+
+  &.lg {
+    min-width: 130px;
+    height: 48px;
+    font-size: 16px;
   }
 }
 
@@ -43,4 +70,14 @@
 .btn_icon {
   width: 32px;
   height: 32px;
+}
+
+.btn_menu {
+  position: relative;
+  width: 48px;
+  min-height: 48px;
+
+  &:hover span {
+    color: #222;
+  }
 }

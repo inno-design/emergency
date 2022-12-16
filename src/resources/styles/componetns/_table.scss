@@ -1,0 +1,150 @@
+.table_wrapper {
+  height: 100%;
+
+  &.scrollable {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 231px;
+
+    table thead th {
+      position: sticky;
+      top:0;
+    }
+  }
+}
+
+.list_wrapper {
+  height: 100%;
+
+  &.scrollable {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 210px;
+  }
+}
+
+.app_board .table_wrapper { min-height: 231px; }
+
+.app_board .expand .table_wrapper { max-height: 421px; }
+
+.table_panel {
+  width: 100%;
+  border-collapse: separate;
+  box-shadow: 0 1px 0 0 #f4f4f4;
+
+  thead th {
+    height: 42px;
+    padding: 0 15px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #fff;
+  }
+  tbody {
+    td {
+      height: 38px;
+      padding: 0 15px;
+      border-bottom: 1px solid #f4f4f4;
+      font-size: 14px;
+      color: #555;
+    }
+    tr:last-child td {
+      border-bottom: 0;
+    }
+  }
+  a {
+    text-decoration: underline;
+    color: #0084ff;
+  }
+
+  .state {
+    position: relative;
+    padding-left: 15px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      margin-top: -3px;
+      border-radius: 50%;
+      background-color: #2dbd1e;
+    }
+
+    &.run::before { background-color: #2dbd1e; }
+    &.stop::before { background-color: #b3b3b3; }
+    &.err::before { background-color: #ff6142; }
+  }
+}
+
+
+.table_list {
+  width: 100%;
+  border-top: 2px solid #222;
+  border-bottom: 1px solid #cbcbcb;
+
+  thead th {
+    height: 3.750rem;
+    padding: 0 1.875rem;
+    border-bottom: 1px solid #222;
+    font-size: 1.125rem;
+    text-align: left;
+    white-space: nowrap;
+  }
+  tbody td {
+    height: 3.750rem;
+    padding: 0 1.875rem;
+    border-bottom: 1px solid #ededed;
+  }
+  tbody tr:last-of-type td {
+    border-bottom: 0;
+  }
+
+  .td_pd0 {
+    width: 50px;
+    padding: 0 !important;
+  }
+}
+
+.user_table {
+  flex: 1
+}
+
+.table_data {
+  table-layout: fixed;
+  width: 100%;
+  min-height: 100%;
+  border-top: 2px solid #222;
+  border-bottom: 1px solid #cbcbcb;
+
+  th, td {
+    font-size: 1.125rem;
+    padding: 0 25px;
+    height: calc(100% / 3);
+  }
+
+  th {
+    width: 200px;
+    background-color: #f9f9f9;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  td {
+    font-weight: bold;
+  }
+
+  tr:not(:first-of-type) {
+    th, td { border-top: 1px solid #ededed; }
+  }
+}
+
+.tdcont_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

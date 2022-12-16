@@ -17,7 +17,7 @@
     <div class="header_top">
       <div class="content_wrapper">
         <h1 class="header_logo">
-          <a href="/"><img src="../../resources/images/layouts/logo_header.png" alt="위기대응 클라우드 플랫폼"></a>
+          <a href="/"><img src="../../resources/images/layouts/logo_header.svg" alt="위기대응 클라우드 플랫폼"></a>
         </h1>
         <div class="header_util">
           <a href="../membership/login.html" class="header_login">
@@ -160,7 +160,7 @@
               <li>
                 <a href="service_app.html" class="service_app_box">
                   <span class="name">Sample 001</span>
-                  <span class="status start">Started</span>
+                  <span class="state start">Started</span>
                 </a>
                 <button type="button" class="btn_menu" onclick="popMenu()"><span class="ico menu"></span></button>
 
@@ -169,15 +169,15 @@
                   <ul class="list_action">
                     <li>
                       <span class="label">앱 이름 변경</span>
-                      <button type="button" class="btn_icon" onclick="dialogOpen('servicePop01')"><span class="ico edit">edit</span></button>
+                      <button type="button" class="btn_icon" onclick="dialogOpen('servicePop03')"><span class="ico edit">edit</span></button>
                     </li>
                     <li>
                       <span class="label">정지</span>
-                      <button type="button" class="btn_icon" onclick="dialogOpen('servicePop02')"><span class="ico pause">stop</span></button>
+                      <button type="button" class="btn_icon" onclick="dialogOpen('servicePop01')"><span class="ico pause">stop</span></button>
                     </li>
                     <li>
                       <span class="label">삭제</span>
-                      <button type="button" class="btn_icon" onclick="dialogOpen('servicePop03')"><span class="ico del">delete</span></button>
+                      <button type="button" class="btn_icon" onclick="dialogOpen('servicePop02')"><span class="ico del">delete</span></button>
                     </li>
                   </ul>
                   <ul class="list_info">
@@ -200,28 +200,28 @@
               <li>
                 <a href="service_app.html" class="service_app_box">
                   <span class="name">Sample 002</span>
-                  <span class="status start">Started</span>
+                  <span class="state start">Started</span>
                 </a>
                 <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
               <li>
                 <a href="service_app.html" class="service_app_box">
                   <span class="name">Sample 003</span>
-                  <span class="status stop">Stopped</span>
+                  <span class="state stop">Stopped</span>
                 </a>
                 <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
               <li>
                 <a href="service_app.html" class="service_app_box">
                   <span class="name">Sample 004</span>
-                  <span class="status start">Started</span>
+                  <span class="state start">Started</span>
                 </a>
                 <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
               <li>
                 <a href="service_app.html" class="service_app_box">
                   <span class="name">Sample 005</span>
-                  <span class="status stop">Stopped</span>
+                  <span class="state stop">Stopped</span>
                 </a>
                 <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
@@ -236,28 +236,28 @@
               <li>
                 <a href="service_app.html" class="service_app_box">
                   <span class="name">MS-SQL</span>
-                  <span class="status stop">Stopped</span>
+                  <span class="state stop">Stopped</span>
                 </a>
                 <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
               <li>
                 <a href="service_app.html" class="service_app_box">
                   <span class="name">eGovFramework</span>
-                  <span class="status stop">Stopped</span>
+                  <span class="state stop">Stopped</span>
                 </a>
                 <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
               <li>
                 <a href="service_app.html" class="service_app_box">
                   <span class="name">Management System</span>
-                  <span class="status stop">Stopped</span>
+                  <span class="state stop">Stopped</span>
                 </a>
                 <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
               <li>
                 <a href="service_app.html" class="service_app_box">
                   <span class="name">Cloud Foundry Java</span>
-                  <span class="status stop">Stopped</span>
+                  <span class="state stop">Stopped</span>
                 </a>
                 <button type="button" class="btn_menu"><span class="ico menu"></span></button>
               </li>
@@ -273,7 +273,7 @@
   <footer class="footer">
     <div class="content_wrapper">
       <nav class="footer_nav">
-        <h2 class="footer_logo"><img src="../../resources/images/layouts/logo_header.png" alt="위기대응 클라우드 플랫폼"></h2>
+        <h2 class="footer_logo"><img src="../../resources/images/layouts/logo_header.svg" alt="위기대응 클라우드 플랫폼"></h2>
         <div class="footer_menu">
           <a href="../terms/terms.html">이용약관</a>
           <a href="../terms/service.html">서비스약관</a>
@@ -287,13 +287,13 @@
     </div>
   </footer>
 
-  <!-- 서비스 재시작 dialog start -->
-  <div class="pop_wrap " id="servicePop01">
+  <!-- 서비스 정지 dialog start -->
+  <div class="pop_wrap hide" id="servicePop01">
     <div class="pop_box">
-      <div class="pop_header"></div><!-- 필요없으면 삭제 -->
+      <div class="pop_header"></div><!-- 필요없으면 삭제해도 됩니다. -->
       <div class="pop_container">
         <div class="pop_content">
-          <p class="pop_msg">사용중인 서비스를 재시작하시겠습니까?</p>
+          <p class="pop_msg">사용중인 서비스를 정지하시겠습니까?</p>
         </div>
       </div>
       <div class="pop_footer">
@@ -302,12 +302,12 @@
       </div>
     </div>
   </div>
-  <!-- 서비스 재시작 dialog end -->
+  <!-- 서비스 정지 dialog end -->
 
   <!-- 서비스 삭제 dialog start -->
-  <div class="pop_wrap " id="servicePop02">
+  <div class="pop_wrap hide" id="servicePop02">
     <div class="pop_box">
-      <div class="pop_header"></div>
+      <div class="pop_header"></div><!-- 필요없으면 삭제해도 됩니다. -->
       <div class="pop_container">
         <div class="pop_content">
           <p class="pop_msg">사용중인 서비스를 삭제하시겠습니까?</p>
@@ -322,12 +322,19 @@
   <!-- 서비스 삭제 dialog end -->
 
   <!-- 앱 이름 변경 dialog start -->
-  <div class="pop_wrap " id="servicePop03">
+  <div class="pop_wrap hide" id="servicePop03">
     <div class="pop_box">
-      <div class="pop_header"></div>
+      <div class="pop_header">
+        <h2 class="pop_header_title">앱 이름 변경</h2>
+      </div>
       <div class="pop_container">
         <div class="pop_content">
-          <p class="pop_msg">사용중인 서비스를 재시작하시겠습니까?</p>
+          <ul class="list_form">
+            <li>
+              <label for="name" class="label_title">새로운 앱 이름</label>
+              <input type="text" id="name" placeholder="새로운 이름을 입력해주세요." class="form_textfield">
+            </li>
+          </ul>
         </div>
       </div>
       <div class="pop_footer">

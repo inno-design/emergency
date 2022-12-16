@@ -1,5 +1,4 @@
 .ico_img {
-
   &.login {
     display: inline-flex;
     justify-content: center;
@@ -51,15 +50,99 @@
     }
   }
 
+  &.up,
+  &.down {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -3px 0 0 -4px;
+      width: 9px;
+      height: 9px;
+      border-top: 2px solid #008aff;
+      border-right: 2px solid #008aff;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+  }
+
+  &.down::after {
+    margin-top: -6px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  &.expand {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #909090;
+    overflow: visible !important;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      border-top: 4px solid #fff;
+      left: -2px;
+      right: -2px;
+    }
+
+    &::after {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+  }
+
   @mixin ico($ico) {
-    background-image: url(src/resources/images/icon/ico_#{$ico}.png);
+    background: url(src/resources/images/icon/ico_#{$ico}.png) no-repeat center center;
   }
 
   &.edit { @include ico('edit') }
   &.pause { @include ico('pause') }
   &.del { @include ico('del') }
+  &.refresh { @include ico('refresh') }
 }
 
 .btn_icon .ico {
   @include ir_ico;
+}
+
+
+.ico_css {
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+
+  &.back {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 50%;
+      margin-top: -2px;
+      width: 26px;
+      border-top: 4px solid currentColor;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 50%;
+      margin-top: -9px;
+      display: block;
+      border-top: 4px solid currentColor;
+      border-right: 4px solid currentColor;
+      -webkit-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+      width: 18px;
+      height: 18px
+    }
+  }
 }
