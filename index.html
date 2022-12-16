@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="src/resources/js/vendors/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -102,41 +101,27 @@
   </header>
 
   <main class="container_main">
-    <!-- main visual swiper start -->
-    <section class="main_visual swiper">
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide visual_01">
-          <div class="content_wrapper">
-            <p class="main_visual_title">
-              누구에게나 개방된<br>
-              <strong>디지털 기반 위기대응 서비스 개발·운영 플랫폼</strong>
-            </p>
-            <p class="main_visual_sub">
-              국가 위기 시 디지털 기반의 위기 대응을 위해<br>
-              클라우드 인프라, 플랫폼 서비스, 데이터를 제공합니다.<br>
-              (클라우드 이용료 지원)
-            </p>
-            <div class="main_visual_btns">
-              <button type="button" class="btn_service" onclick="dialogOpen('pop01')">서비스 신청하기</button>
-              <button type="button" class="btn_sw" onclick="dialogOpen('pop02')">Open S/W 등록하기</button>
-            </div>
+    <!-- main visual start -->
+    <section class="main_visual">
+      <div class="visual_01">
+        <div class="content_wrapper">
+          <p class="main_visual_title">
+            누구에게나 개방된<br>
+            <strong>디지털 기반 위기대응 서비스 개발·운영 플랫폼</strong>
+          </p>
+          <p class="main_visual_sub">
+            국가 위기 시 디지털 기반의 위기 대응을 위해<br>
+            클라우드 인프라, 플랫폼 서비스, 데이터를 제공합니다.<br>
+            (클라우드 이용료 지원)
+          </p>
+          <div class="main_visual_btns">
+            <button type="button" class="btn_service" onclick="dialogOpen('pop01')">서비스 신청하기</button>
+            <button type="button" class="btn_sw" onclick="dialogOpen('pop02')">Open S/W 등록하기</button>
           </div>
         </div>
-
-        <!-- Slides -->
-        <div class="swiper-slide"></div>
-
-        <!-- Slides -->
-        <div class="swiper-slide"></div>
-      </div>
-
-      <!-- pagination -->
-      <div class="main_visual_pagination content_wrapper">
-        <div class="swiper-pagination"></div>
       </div>
     </section>
-    <!-- main visual swiper end -->
+    <!-- main visual end -->
 
     <div class="content_wrapper">
       <!-- 3 card start -->
@@ -404,28 +389,6 @@
   </div>
   <!-- sw 등록하기 dialog end -->
 </div>
-
-<!-- Initialize Swiper -->
-<script src="src/resources/js/vendors/swiper-bundle.min.js"></script>
-<script>
-  const listArray = ["서비스 소개","slide2","slide3"];
-
-  const swiper = new Swiper(".main_visual", {
-    loop: true,
-    speed: 800,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + '<span>'+ listArray[index]+'</span>' + '</span>';
-      },
-    },
-    autoplay: {
-      delay: 4500,
-      disableOnInteraction: false,
-    },
-  });
-</script>
 
 <script>
   <!-- 사용된 스크립트는 이해를 돕기 위한 예시용입니다 -->
