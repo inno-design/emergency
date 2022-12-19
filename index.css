@@ -523,6 +523,74 @@ textarea,
   width: 18px;
   height: 18px;
 }
+.ico_css.arr_tr {
+  width: 10px;
+  height: 10px;
+}
+.ico_css.arr_tr::before, .ico_css.arr_tr::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.ico_css.arr_tr::before {
+  top: -3px;
+  right: -3px;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid;
+  border-right: 2px solid;
+}
+.ico_css.arr_tr::after {
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 4px;
+  right: -4px;
+  border-radius: 2px;
+}
+.ico_css.arr_tr.lg {
+  width: 20px;
+  height: 20px;
+}
+.ico_css.arr_tr.lg::before {
+  top: -4px;
+  right: -4px;
+  border-width: 3px;
+}
+.ico_css.arr_tr.lg::after {
+  width: 36px;
+  height: 3px;
+  top: 8px;
+  right: -8px;
+}
+.ico_css.link {
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+}
+.ico_css.link::before, .ico_css.link::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.ico_css.link::before {
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  bottom: 2px;
+  border-left: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+}
+.ico_css.link::after {
+  width: 12px;
+  height: 2px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 3px;
+  right: -2px;
+  border-radius: 1px;
+}
 
 .btn_more {
   display: inline-flex;
@@ -1212,6 +1280,9 @@ table {
 .gnb_main_item:hover .gnb_sub_wrapper {
   height: 100px;
 }
+.gnb_main_item .ico_css {
+  margin-left: 12px;
+}
 
 .gnb_sub_wrapper {
   overflow: hidden;
@@ -1517,10 +1588,8 @@ table {
   display: block;
   padding: 0.5em 0;
   margin-top: 1.8em;
-  font-size: 19px;
   font-weight: bold;
 }
-
 /* service */
 .main_service {
   display: flex;
@@ -1560,23 +1629,31 @@ table {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 60px;
 }
 .main_service_cloud li {
   flex-grow: 1;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
   width: 20%;
   max-width: 250px;
-  height: 165px;
+  padding-right: 2em;
+  padding-left: 2em;
+  margin-bottom: 45px;
   font-size: 19px;
-  line-height: 1.4;
+  line-height: 1.3;
   font-weight: bold;
   text-align: center;
 }
-.main_service_cloud li span {
-  font-weight: 400;
-  display: inline;
+.main_service_cloud .ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 58px;
+  margin-bottom: 12px;
+}
+.main_service_cloud .name {
+  height: 2.6em;
 }
 
 .main_service_card {
@@ -1599,19 +1676,18 @@ table {
   margin-bottom: 0.5em;
   font-size: 32px;
 }
+.main_service_card .link_shortcut .ico_css {
+  margin-left: 12px;
+}
 
 .main_service_platform {
   display: flex;
+  justify-content: space-evenly;
   margin-top: 65px;
-}
-.main_service_platform li {
-  flex-grow: 1;
 }
 .main_service_platform h3 {
   font-size: 27px;
-}
-.main_service_platform ul {
-  margin-top: 25px;
+  margin: 25px 0;
 }
 .main_service_platform ul li {
   position: relative;
