@@ -108,6 +108,7 @@ table {
   .section_tit {
     margin-bottom: 0.8em;
     font-size: 2rem;
+    color: #222;
 
     &.mt {
       margin-top: 3rem;
@@ -128,7 +129,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .sub_title {
