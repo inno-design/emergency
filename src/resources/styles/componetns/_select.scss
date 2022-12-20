@@ -71,11 +71,12 @@
 
   .select-items div:hover, .same-as-selected {
     background-color: #f2f9ff;
-    color: #0084ff;
+    color: $c_secondary;
   }
 }
 
-.list_form {
+.list_form,
+.table_write {
   .custom-select {
     width: 100%;
   }

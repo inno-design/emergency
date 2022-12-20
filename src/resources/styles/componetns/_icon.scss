@@ -87,8 +87,8 @@
       margin: -3px 0 0 -4px;
       width: 9px;
       height: 9px;
-      border-top: 2px solid #008aff;
-      border-right: 2px solid #008aff;
+      border-top: 2px solid $c_secondary;
+      border-right: 2px solid $c_secondary;
       -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg);
     }
@@ -277,7 +277,6 @@
     left: 50%;
     top: 50%;
     margin: -4px 0 0 -5px;
-    box-sizing: border-box;
     display: block;
     width: 8px;
     height: 8px
@@ -311,6 +310,10 @@
     &::before {
       margin-left: -3px
     }
+  }
+
+  &.link {
+
   }
 }
 

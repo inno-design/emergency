@@ -70,7 +70,7 @@
 
   input:checked ~ .checkbox {
     border: 0;
-    background-color: #008aff;
+    background-color: $c_secondary;
 
     &::after {
       display: block;

@@ -13,9 +13,12 @@
 }
 
 .btn_comm {
-  min-width: 72px;
-  height: 36px;
-  padding: 0 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 4.5rem;
+  height: 2.250rem;
+  padding: 0 1.250rem;
   border: 1px solid #c7c7c7;
   border-radius: 4px;
   font-size: 14px;
@@ -23,12 +26,17 @@
 
   &.submit {
     border: 0;
-    background-color: #008aff;
+    background-color: $c_secondary;
     color: #fff;
   }
 
   &.cancel {
     border-color: #222;
+  }
+
+  &.function {
+    border-color: $c_secondary;
+    color: $c_secondary;
   }
 
   &.critical {
@@ -50,21 +58,25 @@
   }
 
   &.lg {
-    min-width: 130px;
-    height: 48px;
+    min-width: 7rem;
+    height: 3rem;
     font-size: 16px;
   }
 }
 
+.board_btns .btn_comm.lg {
+  min-width: 8rem;
+}
+
 .btn_pop {
-  width: 110px;
-  height: 42px;
+  width: 7rem;
+  height: 2.625rem;
   margin: 0 2px;
   border-radius: 4px;
   font-size: 15px;
 
   &.submit {
-    background-color: #0084ff;
+    background-color: $c_secondary;
     color: #fff;
   }
 

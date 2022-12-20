@@ -9,9 +9,10 @@
 }
 
 .board_read_header,
-.board_read_body {
-  padding-left: 1.333em;
-  padding-right: 1.333em;
+.board_read_body,
+.platform_view_body {
+  padding-left: 1.333rem;
+  padding-right: 1.333rem;
   border-top-color: #222;
 }
 
@@ -24,7 +25,7 @@
   color: #444;
 
   strong {
-    color: #0084ff;
+    color: $c_secondary;
   }
 }
 
@@ -53,23 +54,58 @@
 }
 
 .board_read_body {
-  padding-top: 3.750rem;
   padding-bottom: 3.750rem;
   border-top: 1px solid #222;
   border-bottom: 1px solid #cbcbcb;
   color: #444;
 }
 
+.board_read_body,
+.platform_view_body {
+  padding-top: 3.750rem;
+}
+
 .paging_board,
-.board_read_btns {
+.board_btns {
   margin-top: 2.5rem;
 }
 
-.board_read_btns {
+.board_btns {
   display: flex;
   justify-content: center;
 
   button {
     margin: 0 2px;
   }
+}
+
+.platform_view_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  border-top: 2px solid #efefef;
+  border-bottom: 2px solid #222;
+
+  .title {
+    padding-left: 1.333rem;
+    font-size: 1.625rem;
+  }
+}
+
+.platform_table_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.2rem;
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+.platform_view_doc {
+  margin: 20px 0;
+  padding: 40px;
+  border: 1px solid #dedede
 }

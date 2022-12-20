@@ -55,7 +55,7 @@
   }
   a {
     text-decoration: underline;
-    color: #0084ff;
+    color: $c_secondary;
   }
 
   .state {
@@ -98,6 +98,20 @@
     height: 3.750rem;
     padding: 0 1.875rem;
     border-bottom: 1px solid #ededed;
+    vertical-align: middle;
+
+    button, a, i {
+      vertical-align: middle;
+    }
+
+    a {
+      font-weight: 500;
+      &:hover { color: $c_secondary; }
+    }
+
+    .title {
+      font-weight: 500;
+    }
   }
   tbody tr:last-of-type td {
     border-bottom: 0;
@@ -125,35 +139,72 @@
 }
 
 .user_table {
-  flex: 1
+  flex: 1;
+
+  .table_data {
+    min-height: 100%;
+  }
 }
 
-.table_data {
+.table_data,
+.table_write {
   table-layout: fixed;
   width: 100%;
-  min-height: 100%;
   border-top: 2px solid #222;
   border-bottom: 1px solid #cbcbcb;
 
   th, td {
-    font-size: 1.125rem;
+    height: 3.75rem;
     padding: 0 25px;
-    height: calc(100% / 3);
+    font-size: 1.125rem;
   }
 
   th {
     width: 200px;
-    background-color: #f9f9f9;
     text-align: left;
     font-weight: 400;
   }
 
+  tr:not(:first-of-type) {
+    th, td { border-top: 1px solid #ededed; }
+  }
+}
+
+.table_data {
   td {
     font-weight: bold;
   }
+}
 
-  tr:not(:first-of-type) {
-    th, td { border-top: 1px solid #ededed; }
+.table_write {
+  td {
+    padding: 6px;
+  }
+}
+
+
+.table_data,
+.table_summary {
+  th {
+    background-color: #f9f9f9;
+  }
+}
+
+.table_summary {
+  table-layout: fixed;
+  width: 100%;
+  border: 1px solid #dedede;
+
+  th, td {
+    height: 3.250rem;
+    padding: 0 20px;
+    font-size: 15px;
+  }
+
+  th {
+    width: 180px;
+    text-align: left;
+    font-weight: 400;
   }
 }
 
