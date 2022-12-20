@@ -102,7 +102,7 @@ table {
 
 
 .container_sub {
-  padding: 4.5rem 0;
+  padding: 4.5rem 0 9rem;
   border-top: 1px solid #dcdcdc;
 
   .section_tit {
@@ -154,6 +154,7 @@ table {
         position: absolute;
         border-top: 2px solid #dedede;
         border-right: 2px solid #dedede;
+        -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
         right: 18px;
         top: 6px;

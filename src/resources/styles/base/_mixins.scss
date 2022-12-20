@@ -49,6 +49,9 @@
   @if $rootSize == 14px {
     font-size: (1+(0.071*$added))+rem;
   }
+  @if $rootSize == 16px {
+    font-size: (1+(0.063*$added))+rem;
+  }
 }
 
 @mixin bubble($border-w,$color,$position) {
