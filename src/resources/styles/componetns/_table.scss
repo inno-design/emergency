@@ -106,6 +106,7 @@
 
     a {
       font-weight: 500;
+      transition: color .2s;
       &:hover { color: $c_secondary; }
     }
 
@@ -116,27 +117,31 @@
   tbody tr:last-of-type td {
     border-bottom: 0;
   }
-
-  .td_pd0 {
-    width: 50px;
-    padding: 0 !important;
-  }
-
-  .td_alc {
-    text-align: center;
-    padding: 0;
-  }
-
-  .td_num {
-    font-size: 1.125rem;
-    color: #333;
-  }
-
-  .td_date {
-    font-size: 0.938em;
-    color: #555;
-  }
 }
+
+.td_pd0 {
+  width: 50px;
+  padding: 0 !important;
+}
+
+.td_alc {
+  text-align: center !important;
+  padding: 0 !important;
+}
+
+.td_num {
+  font-size: 1.125rem;
+  color: #333;
+}
+
+.td_date {
+  font-size: 0.938em;
+  color: #555;
+}
+
+.td_c1 { color: #ff6142; }
+.td_c2 { color: #5189fa; }
+.td_c3 { color: #2dbd1e; }
 
 .user_table {
   flex: 1;
@@ -190,9 +195,27 @@
   }
 
   .form_textfield,
+  .custom-select,
+  .form_textarea {
+    border-color: #ebebeb;
+    background-color: #f7f7f7;
+    font-size: 1rem;
+  }
+
+  .form_textfield,
   .custom-select {
     height: 3rem;
-    background-color: #f7f7f7;
+  }
+
+  .form_textfield,
+  .form_textarea,
+  .select-items div,
+  .select-selected {
+    padding-left: 1rem;
+  }
+
+  .form_textarea {
+    height: 15rem;
   }
 }
 
@@ -227,4 +250,19 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.tdpw_container {
+  display: flex;
+  align-items: center;
+
+  .form_textfield {
+    width: 150px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .chk_custom {
+    margin: 0 20px 0 10px;
+  }
 }

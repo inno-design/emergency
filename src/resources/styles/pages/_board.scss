@@ -9,11 +9,21 @@
 }
 
 .board_read_header,
-.board_read_body,
-.platform_view_body {
+.board_read_body {
   padding-left: 1.333rem;
   padding-right: 1.333rem;
   border-top-color: #222;
+}
+
+.board_read_header {
+  &.sub {
+    border-top-color: #efefef;
+  }
+}
+
+.title {
+  margin-right: auto;
+  font-size: 1.625rem;
 }
 
 .board_date {
@@ -54,42 +64,50 @@
 }
 
 .board_read_body {
+  padding-top: 3.750rem;
   padding-bottom: 3.750rem;
   border-top: 1px solid #222;
   border-bottom: 1px solid #cbcbcb;
+  line-height: 1.5;
   color: #444;
-}
 
-.board_read_body,
-.platform_view_body {
-  padding-top: 3.750rem;
+  &.sub {
+    padding-top: 2.5rem;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .paging_board,
-.board_btns {
+.board_btns:not(.float) {
   margin-top: 2.5rem;
 }
 
 .board_btns {
-  display: flex;
-  justify-content: center;
+  &:not(.float) {
+    display: flex;
+    justify-content: center;
+  }
 
-  button {
+  margin-right: -2px;
+  margin-left: -2px;
+
+  .btn_comm {
     margin: 0 2px;
   }
-}
 
-.platform_view_header {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  border-top: 2px solid #efefef;
-  border-bottom: 2px solid #222;
+  &.float {
+    position: relative;
 
-  .title {
-    margin-right: auto;
-    padding-left: 1.333rem;
-    font-size: 1.625rem;
+    .btn_comm {
+      position: absolute;
+      right: 0;
+      bottom: calc(100% - 6px);
+    }
   }
 }
 
@@ -108,4 +126,59 @@
   margin: 20px 0;
   padding: 40px;
   border: 1px solid #dedede
+}
+
+.board_read_page {
+  margin-top: -1px;
+  border-bottom: 1px solid #cbcbcb;
+
+  .board_prev,
+  .board_next {
+    display: flex;
+    align-items: center;
+    height: 3.750em;
+    border-top: 1px solid #ededed;
+
+    a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      color: #222;
+      font-weight: 500;
+    }
+
+    &::before {
+      display: inline-block;
+      width: 6em;
+      padding-left: 1.333rem;
+    }
+  }
+
+  .board_prev {
+    &::before {
+      content: '이전글';
+      color: $c_primary;
+    }
+  }
+
+  .board_next {
+    &::before {
+      content: '다음글';
+      color: $c_secondary;
+    }
+  }
+
+  .board_ans {
+    position: relative;
+    padding: 1.5em 1.333rem 1.5em 6em;
+    color: $c_secondary;
+    line-height: 1.5;
+
+    &::before {
+      content: '답변';
+      position: absolute;
+      top: 1.5em;
+      left: 1.333rem;
+    }
+  }
 }
