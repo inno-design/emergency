@@ -310,26 +310,5 @@
   <!-- 앱 이름 변경 dialog end -->
 </div>
 
-<!-- custom select -->
-<script src="../../resources/js/select.js"></script>
-
-<!-- app pop  -->
-<script>
-  const popMenu = function (){
-    document.querySelector('.js-popMenu').classList.toggle('hide');
-  }
-
-  <!--Dialog 열기/닫기-->
-  const dialogOpen = function(id){
-    document.getElementById(id).classList.remove("hide");
-    document.body.style.overflow = "hidden";
-  }
-
-  const dialogClose = function(id){
-    document.getElementById(id).classList.add("hide");
-    document.body.style.overflow = "auto";
-  }
-</script>
-
 </body>
 </html>

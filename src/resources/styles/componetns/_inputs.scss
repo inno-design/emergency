@@ -1,3 +1,4 @@
+/* text type input */
 .form_textfield {
   width: 100%;
   height: 2.750rem;
@@ -9,6 +10,7 @@
   font-size: 14px;
 }
 
+/* textarea */
 .form_textarea {
   width: 100%;
   min-height: 2.750rem;
@@ -20,6 +22,7 @@
   font-size: 14px;
 }
 
+/* checkbox type input custom */
 .chk_custom {
   position: relative;
   display: inline-flex;
@@ -32,16 +35,7 @@
   color: #555;
 
   input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    @include ir_hidden;
   }
 
   .checkbox {
@@ -86,3 +80,74 @@
   }
 }
 
+/* switch checkbox */
+.chk_switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #444;
+
+  input {
+    @include ir_hidden;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .label {
+    margin-right: 12px;
+    line-height: 1.3;
+  }
+
+  .checkbox {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #bcbcbc;
+    transition: background-color .2s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: #fff;
+      transition: left .2s;
+    }
+  }
+
+  input:checked ~ .checkbox {
+    background-color: $c_secondary;
+
+    &::after {
+      left: 28px;
+    }
+  }
+}
+
+/* file type input custom */
+.file_custom {
+  display: flex;
+
+  .form_textfield {
+    flex-grow: 1
+  }
+
+  .btn_comm {
+    margin-left: 4px;
+  }
+
+  input[type="file"] {
+    @include ir_hidden;
+  }
+}

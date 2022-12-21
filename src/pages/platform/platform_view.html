@@ -131,11 +131,16 @@
 
           <div class="platform_view_doc"></div>
 
+          <form>
           <div class="platform_table_header">
             <h4 class="title">앱 생성</h4>
-            <label class="">
-
-            </label>
+            <div class="chk_switch">
+              <span class="label">앱 시작 여부</span>
+              <label>
+                <input type="checkbox" title="on off" checked>
+                <span class="checkbox"></span>
+              </label>
+            </div>
           </div>
 
           <table class="table_write">
@@ -206,15 +211,22 @@
                 </div>
               </td>
               <th>사용자 앱</th>
-              <td><input type="file" title="앱 URL" placeholder="호스트를 입력해주세요." class="form_file"></td>
+              <td>
+                <div class="file_custom">
+                  <input type="text" class="form_textfield" title="사용자 앱" placeholder="파일 선택" value="">
+                  <label for="file" class="btn_comm lg">파일 선택</label>
+                  <input type="file" id="file">
+                </div>
+              </td>
             </tr>
           </table>
-        </div>
 
-        <div class="board_btns">
-          <button type="button" class="btn_comm cancel lg">취소</button>
-          <button type="button" class="btn_comm submit lg">사용자 앱 생성</button>
-          <button type="button" class="btn_comm critical lg">샘플 앱 생성</button>
+          <div class="board_btns">
+            <button type="button" class="btn_comm cancel lg">취소</button>
+            <button type="submit" class="btn_comm submit lg">사용자 앱 생성</button>
+            <button type="submit" class="btn_comm critical lg">샘플 앱 생성</button>
+          </div>
+          </form>
         </div>
       </div>
       <!-- platform view end -->
@@ -237,85 +249,20 @@
       </p>
     </div>
   </footer>
-
-  <!-- 서비스 정지 dialog start -->
-  <div class="pop_wrap hide" id="servicePop01">
-    <div class="pop_box">
-      <div class="pop_header"></div><!-- 필요없으면 삭제해도 됩니다. -->
-      <div class="pop_container">
-        <div class="pop_content">
-          <p class="pop_msg">사용중인 서비스를 정지하시겠습니까?</p>
-        </div>
-      </div>
-      <div class="pop_footer">
-        <button type="button" class="btn_pop cancel" onclick="dialogClose('servicePop01')">취소</button>
-        <button type="button" class="btn_pop submit">확인</button>
-      </div>
-    </div>
-  </div>
-  <!-- 서비스 정지 dialog end -->
-
-  <!-- 서비스 삭제 dialog start -->
-  <div class="pop_wrap hide" id="servicePop02">
-    <div class="pop_box">
-      <div class="pop_header"></div><!-- 필요없으면 삭제해도 됩니다. -->
-      <div class="pop_container">
-        <div class="pop_content">
-          <p class="pop_msg">사용중인 서비스를 삭제하시겠습니까?</p>
-        </div>
-      </div>
-      <div class="pop_footer">
-        <button type="button" class="btn_pop cancel" onclick="dialogClose('servicePop02')">취소</button>
-        <button type="button" class="btn_pop submit">확인</button>
-      </div>
-    </div>
-  </div>
-  <!-- 서비스 삭제 dialog end -->
-
-  <!-- 앱 이름 변경 dialog start -->
-  <div class="pop_wrap hide" id="servicePop03">
-    <div class="pop_box">
-      <div class="pop_header">
-        <h2 class="pop_header_title">앱 이름 변경</h2>
-      </div>
-      <div class="pop_container">
-        <div class="pop_content">
-          <ul class="list_form">
-            <li>
-              <label for="name" class="label_title">새로운 앱 이름</label>
-              <input type="text" id="name" placeholder="새로운 이름을 입력해주세요." class="form_textfield">
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="pop_footer">
-        <button type="button" class="btn_pop cancel" onclick="dialogClose('servicePop03')">취소</button>
-        <button type="button" class="btn_pop submit">확인</button>
-      </div>
-    </div>
-  </div>
-  <!-- 앱 이름 변경 dialog end -->
 </div>
 
 <!-- custom select -->
 <script src="../../resources/js/select.js"></script>
 
-<!-- app pop  -->
+<!-- 테스트용 삽입 - input file -->
+<script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
 <script>
-  const popMenu = function (){
-    document.querySelector('.js-popMenu').classList.toggle('hide');
-  }
-
-  <!--Dialog 열기/닫기-->
-  const dialogOpen = function(id){
-    document.getElementById(id).classList.remove("hide");
-    document.body.style.overflow = "hidden";
-  }
-
-  const dialogClose = function(id){
-    document.getElementById(id).classList.add("hide");
-    document.body.style.overflow = "auto";
-  }
+  $(document).ready(function() {
+    $("#file").on('change',function(){
+      const cur = $(this).parent().find("input[type='file']").val();
+      $(this).parent().find("input[type='text']").val(cur);
+    });
+  });
 </script>
 
 </body>

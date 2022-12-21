@@ -81,13 +81,13 @@
 
 .platform_view_header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 5rem;
   border-top: 2px solid #efefef;
   border-bottom: 2px solid #222;
 
   .title {
+    margin-right: auto;
     padding-left: 1.333rem;
     font-size: 1.625rem;
   }
@@ -95,11 +95,11 @@
 
 .platform_table_header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 3.2rem;
 
   .title {
+    margin-right: auto;
     font-size: 1.5rem;
   }
 }

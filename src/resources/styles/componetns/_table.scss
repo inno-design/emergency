@@ -143,6 +143,10 @@
 
   .table_data {
     min-height: 100%;
+
+    th {
+      width: 20%;
+    }
   }
 }
 
@@ -160,7 +164,7 @@
   }
 
   th {
-    width: 200px;
+    width: 15%;
     text-align: left;
     font-weight: 400;
   }
@@ -177,8 +181,18 @@
 }
 
 .table_write {
+  th {
+    font-size: 1rem;
+  }
+
   td {
-    padding: 6px;
+    padding: 6px 0;
+  }
+
+  .form_textfield,
+  .custom-select {
+    height: 3rem;
+    background-color: #f7f7f7;
   }
 }
 
