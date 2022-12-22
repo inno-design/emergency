@@ -342,6 +342,28 @@
       margin-top: 8px;
     }
   }
+
+  &.plus::before,
+  &.plus::after,
+  &.minus::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #777;
+  }
+
+  &.plus::after,
+  &.minus::after {
+    width: 12px;
+    height: 2px;
+  }
+
+  &.plus::before {
+    width: 2px;
+    height: 12px;
+  }
 }
 
 button:hover {

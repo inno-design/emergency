@@ -1,7 +1,15 @@
 .list_form {
   & > li {
+    position: relative;
+
     &:not(:first-of-type) {
       margin-top: 20px;
+    }
+
+    .msg_sm {
+      position: absolute;
+      top: 3px;
+      right: 0;
     }
   }
 }

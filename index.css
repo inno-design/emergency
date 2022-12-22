@@ -683,6 +683,22 @@ textarea,
   height: 4px;
   margin-top: 8px;
 }
+.ico.plus::before, .ico.plus::after, .ico.minus::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #777;
+}
+.ico.plus::after, .ico.minus::after {
+  width: 12px;
+  height: 2px;
+}
+.ico.plus::before {
+  width: 2px;
+  height: 12px;
+}
 
 button:hover .ico.search::before, button:hover .ico.search::after {
   color: #222;
@@ -856,6 +872,13 @@ button:hover .ico.search::before, button:hover .ico.search::after {
 .custom-select.err {
   border-color: #e76055 !important;
 }
+.form_textfield.confirm,
+.form_textarea.confirm,
+.custom-select.confirm {
+  position: relative;
+  border-color: #50aa00 !important;
+  background: #fff url(src/resources/images/icon/ico_confirm.png) no-repeat 97% center;
+}
 
 /* textarea */
 .form_textarea {
@@ -999,6 +1022,33 @@ button:hover .ico.search::before, button:hover .ico.search::after {
   height: 1px;
   overflow: hidden;
   clip: rect(1px 1px 1px 1px);
+}
+
+.inputBtn_container {
+  display: flex;
+  align-items: stretch;
+}
+.inputBtn_container .form_textfield {
+  flex-grow: 1;
+}
+.inputBtn_container button {
+  flex-shrink: 0;
+  width: 44px;
+  height: auto;
+  margin-left: 2px;
+  border-radius: 4px;
+  border: 1px solid #bcbcbc;
+  transition: border-color 0.2s;
+}
+.inputBtn_container button:hover {
+  border-color: #222;
+}
+.inputBtn_container button:hover .ico::before,
+.inputBtn_container button:hover .ico::after {
+  background-color: #222;
+}
+.inputBtn_container + .inputBtn_container {
+  margin-top: 6px;
 }
 
 /* select */
@@ -1319,6 +1369,9 @@ button:hover .ico.search::before, button:hover .ico.search::after {
   align-items: center;
   width: 100%;
 }
+.tdcont_container .btn_comm {
+  margin-right: -25px;
+}
 
 .tdpw_container {
   display: flex;
@@ -1598,6 +1651,11 @@ table {
   font-weight: bolder;
 }
 
+.container_sub,
+.container_login {
+  min-height: calc(100vh - 370px);
+}
+
 .header_nav {
   position: relative;
 }
@@ -1771,6 +1829,11 @@ table {
   margin: 8px 0;
   font-size: 12px;
   color: #e76055;
+}
+
+.msg_sm {
+  font-size: 11px;
+  color: #878787;
 }
 
 .msg_notice {
@@ -2133,8 +2196,16 @@ table {
   background-color: currentColor;
 }
 
+.list_form > li {
+  position: relative;
+}
 .list_form > li:not(:first-of-type) {
   margin-top: 20px;
+}
+.list_form > li .msg_sm {
+  position: absolute;
+  top: 3px;
+  right: 0;
 }
 
 .label_title {
@@ -2193,7 +2264,7 @@ table {
   border-top-color: #efefef;
 }
 
-.title {
+.board_title.sub {
   margin-right: auto;
   font-size: 1.625rem;
 }
