@@ -43,9 +43,28 @@
   .tit {
     margin: 1rem 0 0.5rem;
     font-size: 1.250rem;
+    font-weight: 500;
   }
   .txt {
     font-size: 14px;
     color: #555;
   }
+}
+
+.pop_msg_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 1rem;
+  border: 1px solid #e8e8e8;
+  background-color: #f7f7f7;
+  color: $c_secondary;
+}
+
+.pop_msg_header {
+  margin: -20px 40px 40px;
+  font-size: 15px;
+  color: #666;
 }

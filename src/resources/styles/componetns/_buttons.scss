@@ -18,7 +18,7 @@
   align-items: center;
   min-width: 4.5rem;
   height: 2.250rem;
-  padding: 0 1.250rem;
+  padding: 0 1.5em;
   border: 1px solid #c7c7c7;
   border-radius: 4px;
   font-size: 14px;
@@ -36,6 +36,12 @@
 
   &.function {
     border-color: $c_secondary;
+    color: $c_secondary;
+  }
+
+  &.confirm {
+    border: 0;
+    background-color: #edf1fd;
     color: $c_secondary;
   }
 
@@ -61,6 +67,30 @@
     min-width: 7rem;
     height: 3rem;
     font-size: 16px;
+  }
+
+  .ico.next {
+    padding-right: 20px;
+
+    &::after {
+      left: auto;
+      right: 0;
+
+    }
+  }
+
+  .ico.prev {
+    padding-left: 15px;
+
+    &::after {
+      left: 0;
+    }
+  }
+
+  .ico.prev::after,
+  .ico.next::after {
+    margin-top: -3px;
+    border-color: currentColor;
   }
 }
 

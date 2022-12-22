@@ -15,12 +15,13 @@
 .custom-select {
   &.err {
     border-color: #e76055 !important;
+    color: #e76055 !important;
   }
 
   &.confirm {
     position: relative;
     border-color: #50aa00 !important;
-    background: #fff url(src/resources/images/icon/ico_confirm.png) no-repeat 97% center
+    background: #fff url(src/resources/images/icon/ico_confirm.png) no-repeat right center
   }
 }
 
@@ -66,10 +67,11 @@
       content: "";
       display: none;
       position: absolute;
-      top: 4px;
-      left: 4px;
+      top: 50%;
+      left: 50%;
       width: 10px;
       height: 6px;
+      margin: -5px 0 0 -5px;
       border-bottom: solid 2px currentColor;
       border-left: solid 2px currentColor;
       -webkit-transform: rotate(-45deg);
@@ -84,6 +86,7 @@
 
     &::after {
       display: block;
+      color: #fff;
     }
   }
 
@@ -193,6 +196,15 @@
         background-color: #222;
       }
     }
+  }
+
+  .btn_comm {
+    margin-left: 6px;
+  }
+
+  .custom-select {
+    flex-shrink: 0;
+    margin-right: 6px
   }
 
   & + & {
