@@ -23,7 +23,7 @@
   display: block;
   height: auto;
   font-size: 15px;
-  padding: 5px 0 1rem;
+  padding-bottom: 1rem;
 }
 
 .board_list_header {
@@ -32,6 +32,11 @@
   .board_count {
     display: none;
   }
+}
+
+.board_list_wrapper,
+.board_read_wrapper {
+  padding-top: 5px
 }
 
 .board_read_header,
@@ -43,7 +48,7 @@
 .board_read_header {
   display: block;
   height: auto;
-  padding-bottom: 1rem;
+  padding-top: 1rem;
 
   .board_date {
     font-size: 11px
