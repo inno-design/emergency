@@ -3148,6 +3148,7 @@ table {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
+  word-break: keep-all;
 }
 
 .cloud_category,
