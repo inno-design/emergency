@@ -117,52 +117,14 @@
       </div>
       <!-- sub header end -->
 
-      <!-- board start -->
-      <div class="board_read_wrapper">
-        <div class="board_read_header sub">
-          <h3 class="board_title sub">문의하기</h3>
-          <span class="board_date">2022. 11. 08  09:12</span>
+      <!-- mobile view start -->
+      <div class="mobile_notice">
+        <p class="mobile_msg">자세한 내용 보기는 PC로<br>접속하시면 확인할 수 있습니다.</p>
+        <div class="board_btns">
+          <button type="button" class="btn_comm submit lg">확인</button>
         </div>
-
-        <form>
-          <table class="table_write">
-            <tr>
-              <th>제목</th>
-              <td><input type="text" title="제목" placeholder="제목을 입력해주세요." class="form_textfield err"></td>
-            </tr>
-            <tr>
-              <th>내용</th>
-              <td>
-                <textarea title="내용" cols="50" rows="5" class="form_textarea err" placeholder="내용을 입력해주세요."></textarea>
-              </td>
-            </tr>
-            <tr>
-              <th>메일주소</th>
-              <td><input type="text" title="메일주소" placeholder="메일주소를 입력해주세요." class="form_textfield"></td>
-            </tr>
-            <tr>
-              <th>비밀번호</th>
-              <td>
-                <div class="tdpw_container">
-                  <input type="password" title="비밀번호" placeholder="비밀번호 4자리" class="form_textfield">
-                  <label class="chk_custom">
-                    <input type="checkbox">
-                    <span class="checkbox"></span>
-                  </label>
-                  <p class="msg_notice">비밀글 작성시 체크박스에 체크 후 비밀번호를 입력해 주세요.</p>
-                </div>
-              </td>
-            </tr>
-          </table>
-
-          <div class="board_btns">
-            <button type="button" class="btn_comm cancel lg" onclick="dialogOpen('cancelPopup')">취소</button>
-            <button type="submit" class="btn_comm submit lg">제출</button>
-          </div>
-        </form>
-
       </div>
-      <!-- board end -->
+      <!-- mobile view end -->
     </div>
   </main>
 
