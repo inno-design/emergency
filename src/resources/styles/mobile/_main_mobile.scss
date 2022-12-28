@@ -51,18 +51,17 @@
   margin: $m_top 0;
 
   .main_card_item {
-
     &::before {
       content: none;
     }
 
     .card_cont {
-      position: relative;
+      position: static;
       padding: 0 0 0 40px;
 
       &::before {
         top: 50%;
-        left: 0;
+        left: $m_sides;
         transform: translateY(-50%);
       }
 
@@ -77,6 +76,15 @@
 
     .card_cont p {
       display: none
+    }
+
+    .link_shortcut {
+      width: auto;
+      height: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
     }
   }
 }

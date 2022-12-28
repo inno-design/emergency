@@ -3594,12 +3594,12 @@ body {
   content: none;
 }
 .main_card .main_card_item .card_cont {
-  position: relative;
+  position: static;
   padding: 0 0 0 40px;
 }
 .main_card .main_card_item .card_cont::before {
   top: 50%;
-  left: 0;
+  left: 24px;
   transform: translateY(-50%);
 }
 .main_card .main_card_item .card_cont::before, .main_card .main_card_item .card_cont h3 {
@@ -3610,6 +3610,14 @@ body {
 }
 .main_card .main_card_item .card_cont p {
   display: none;
+}
+.main_card .main_card_item .link_shortcut {
+  width: auto;
+  height: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .main_service_toggle {
