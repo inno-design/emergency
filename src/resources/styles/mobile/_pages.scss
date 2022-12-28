@@ -36,7 +36,8 @@
 
 .board_list_wrapper,
 .board_read_wrapper {
-  padding-top: 5px
+  padding-top: 5px;
+  word-break: keep-all;
 }
 
 .board_read_header,
