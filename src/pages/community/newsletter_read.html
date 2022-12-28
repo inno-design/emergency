@@ -28,6 +28,7 @@
     </div>
     <!-- header_top end -->
     <nav class="header_nav">
+      <button type="button" class="btn_icon btn_nav" onclick="navToggle();"><span class="ico nav">Menu</span></button>
       <div class="content_wrapper">
         <ul class="gnb_main">
           <li class="gnb_main_item">
@@ -54,6 +55,7 @@
           </li>
           <li class="gnb_main_item">
             <a href="../digital/data.html">디지털 자원</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
             <div class="gnb_sub_wrapper">
               <div class="content_wrapper">
                 <div class="gnb_sub_tit">디지털 자원</div>
@@ -78,6 +80,7 @@
           </li>
           <li class="gnb_main_item selected">
             <a href="../community/notice.html">커뮤니티</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
             <div class="gnb_sub_wrapper">
               <div class="content_wrapper">
                 <div class="gnb_sub_tit">커뮤니티</div>
@@ -180,5 +183,10 @@
     });
   });
 </script>
+
+<!-- mobile nav -->
+<script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+<script src="../../resources/js/nav.js"></script>
+
 </body>
 </html>

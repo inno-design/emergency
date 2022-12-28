@@ -46,7 +46,7 @@
       height: 38px;
       padding: 0 15px;
       border-bottom: 1px solid #f4f4f4;
-      font-size: 14px;
+      font-size: 0.875rem;;
       color: #555;
     }
     tr:last-child td {
@@ -136,7 +136,7 @@
 
 .td_date {
   font-size: 0.938em;
-  color: #555;
+  color: #666;
 }
 
 .td_c1 { color: #ff6142; }
@@ -176,6 +176,15 @@
 
   tr:not(:first-of-type) {
     th, td { border-top: 1px solid #ededed; }
+  }
+
+  .msg_sm {
+    font-size: 12px;
+    color: #a2a2a2;
+
+    &::before {
+      content: '* ';
+    }
   }
 }
 

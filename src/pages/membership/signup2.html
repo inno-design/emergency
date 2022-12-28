@@ -28,6 +28,7 @@
     </div>
     <!-- header_top end -->
     <nav class="header_nav">
+      <button type="button" class="btn_icon btn_nav" onclick="navToggle();"><span class="ico nav">Menu</span></button>
       <div class="content_wrapper">
         <ul class="gnb_main">
           <li class="gnb_main_item">
@@ -54,6 +55,7 @@
           </li>
           <li class="gnb_main_item">
             <a href="../digital/data.html">디지털 자원</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
             <div class="gnb_sub_wrapper">
               <div class="content_wrapper">
                 <div class="gnb_sub_tit">디지털 자원</div>
@@ -78,6 +80,7 @@
           </li>
           <li class="gnb_main_item">
             <a href="../community/notice.html">커뮤니티</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
             <div class="gnb_sub_wrapper">
               <div class="content_wrapper">
                 <div class="gnb_sub_tit">커뮤니티</div>
@@ -122,28 +125,6 @@
       <form>
         <table class="table_write">
           <tr>
-            <th>이름</th>
-            <td><input type="text" title="이름" placeholder="이름을 입력해주세요." class="form_textfield"></td>
-          </tr>
-          <tr>
-            <th>아이디</th>
-            <td>
-              <div class="inputBtn_container">
-                <input type="text" title="아이디" placeholder="아이디를 입력해주세요." class="form_textfield">
-                <!--<button type="button" class="btn_comm submit lg">중복확인</button>-->
-                <button type="button" class="btn_comm confirm lg">확인완료</button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th>비밀번호</th>
-            <td><input type="password" title="비밀번호" placeholder="비밀번호를 입력해주세요." class="form_textfield"></td>
-          </tr>
-          <tr>
-            <th>비밀번호 재입력</th>
-            <td><input type="password" title="비밀번호 재입력" placeholder="비밀번호를 다시 한번입력해주세요." class="form_textfield"></td>
-          </tr>
-          <tr>
             <th>휴대폰 번호</th>
             <td>
               <div class="inputBtn_container">
@@ -153,15 +134,57 @@
                     <option value="1">SKT</option>
                   </select>
                 </div>
-                <input type="text" id="mobile" placeholder="휴대폰 번호를 입력해주세요." value="휴대폰 번호를 입력해주세요." class="form_textfield err">
+                <input type="text" id="mobile" placeholder="휴대폰 번호를 입력해주세요." class="form_textfield err">
                 <button type="button" class="btn_comm submit lg">인증하기</button>
                 <!--<button type="button" class="btn_comm confirm lg">인증완료</button>-->
               </div>
+              <p class="msg_form">휴대폰 번호를 입력해주세요.</p>
+            </td>
+          </tr>
+          <tr>
+            <th>이름</th>
+            <td>
+              <input type="text" title="이름" placeholder="이름을 입력해주세요." class="form_textfield err">
+              <p class="msg_form">이름을 입력해주세요.</p>
+            </td>
+          </tr>
+          <tr>
+            <th>아이디</th>
+            <td>
+              <input type="text" title="아이디" placeholder="아이디를 입력해주세요." class="form_textfield">
+              <p class="msg_form" style="display: none">이미 등록된 아이디입니다.</p>
+            </td>
+          </tr>
+          <tr>
+            <th>비밀번호</th>
+            <td>
+              <input type="password" title="비밀번호" placeholder="비밀번호를 입력해주세요." class="form_textfield">
+              <small class="msg_sm">영문,숫자,특수문자포함 8~12자이내</small>
+              <p class="msg_form" style="display: none">비밀번호 조합이 맞지 않습니다.</p>
+            </td>
+          </tr>
+          <tr>
+            <th>비밀번호 재입력</th>
+            <td>
+              <input type="password" title="비밀번호 재입력" placeholder="비밀번호를 다시 한번 입력해주세요." class="form_textfield">
+              <p class="msg_form" style="display: none">비밀번호가 일치하지 않습니다.</p>
             </td>
           </tr>
           <tr>
             <th>이메일</th>
-            <td><input type="text" title="이메일" placeholder="이메일을 입력해주세요." class="form_textfield"></td>
+            <td>
+              <div class="inputBtn_container">
+                <input type="text" title="이메일" placeholder="이메일을 입력해주세요." class="form_textfield">
+                <span class="mdd">@</span>
+                <input type="text" title="이메일" class="form_textfield">
+                <div class="custom-select" style="width: 210px">
+                  <select title="이메일">
+                    <option value="0">직접입력</option>
+                  </select>
+                </div>
+              </div>
+              <p class="msg_form" style="display: none">이메일을 입력해주세요.</p>
+            </td>
           </tr>
         </table>
 
@@ -244,5 +267,10 @@
     document.body.style.overflow = "auto";
   }
 </script>
+
+<!-- mobile nav -->
+<script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+<script src="../../resources/js/nav.js"></script>
+
 </body>
 </html>

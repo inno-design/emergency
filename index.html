@@ -28,6 +28,7 @@
     </div>
     <!-- header_top end -->
     <nav class="header_nav">
+      <button type="button" class="btn_icon btn_nav" onclick="navToggle();"><span class="ico nav">Menu</span></button>
       <div class="content_wrapper">
         <ul class="gnb_main">
           <li class="gnb_main_item">
@@ -54,6 +55,7 @@
           </li>
           <li class="gnb_main_item">
             <a href="src/pages/digital/data.html">디지털 자원</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
             <div class="gnb_sub_wrapper">
               <div class="content_wrapper">
                 <div class="gnb_sub_tit">디지털 자원</div>
@@ -69,7 +71,7 @@
             <a href="src/pages/platform/platform.html">플랫폼 서비스</a>
             <div class="gnb_sub_wrapper">
               <div class="content_wrapper">
-                <div class="gnb_sub_tit">플랫폼 서비스</div> 
+                <div class="gnb_sub_tit">플랫폼 서비스</div>
                 <ul class="gnb_sub">
                   <li><a href="src/pages/platform/platform.html">플랫폼 서비스</a></li>
                 </ul>
@@ -78,6 +80,7 @@
           </li>
           <li class="gnb_main_item">
             <a href="src/pages/community/notice.html">커뮤니티</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
             <div class="gnb_sub_wrapper">
               <div class="content_wrapper">
                 <div class="gnb_sub_tit">커뮤니티</div>
@@ -160,94 +163,124 @@
               <h2 class="section_tit">민간 클라우드 환경 제공</h2>
               <ul class="main_service_cloud">
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_compute.png" alt="Compute">
-                  </div>
-                  <span class="name">Compute</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_compute.png" alt="Compute">
+                    </div>
+                    <span class="name">Compute</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_containers.png" alt="Containers">
-                  </div>
-                  <span class="name">Containers</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_containers.png" alt="Containers">
+                    </div>
+                    <span class="name">Containers</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_storage.png" alt="Storage">
-                  </div>
-                  <span class="name">Storage</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_storage.png" alt="Storage">
+                    </div>
+                    <span class="name">Storage</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_networking.png" alt="Networking">
-                  </div>
-                  <span class="name">Networking</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_networking.png" alt="Networking">
+                    </div>
+                    <span class="name">Networking</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_database.png" alt="Database">
-                  </div>
-                  <span class="name">Database</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_database.png" alt="Database">
+                    </div>
+                    <span class="name">Database</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_security.png" alt="Security">
-                  </div>
-                  <span class="name">Security</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_security.png" alt="Security">
+                    </div>
+                    <span class="name">Security</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_ai.png" alt="AI Services">
-                  </div>
-                  <span class="name">AI Services</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_ai.png" alt="AI Services">
+                    </div>
+                    <span class="name">AI Services</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_application.png" alt="Application Services">
-                  </div>
-                  <span class="name">Application Services</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_application.png" alt="Application Services">
+                    </div>
+                    <span class="name">Application Services</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_bigdata.png" alt="Big Data Analytics">
-                  </div>
-                  <span class="name">Big Data &amp; Analytics</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_bigdata.png" alt="Big Data Analytics">
+                    </div>
+                    <span class="name">Big Data &amp; Analytics</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_business.png" alt="Business Applications">
-                  </div>
-                  <span class="name">Business Applications</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_business.png" alt="Business Applications">
+                    </div>
+                    <span class="name">Business Applications</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_delivery.png" alt="Content Delivery">
-                  </div>
-                  <span class="name">Content Delivery</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_delivery.png" alt="Content Delivery">
+                    </div>
+                    <span class="name">Content Delivery</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_tools.png" alt="Developer Tools">
-                  </div>
-                  <span class="name">Developer Tools</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_tools.png" alt="Developer Tools">
+                    </div>
+                    <span class="name">Developer Tools</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_management.png" alt="Management arr_trvernance">
-                  </div>
-                  <span class="name">Management &amp; arr_trvernance</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_management.png" alt="Management Governance">
+                    </div>
+                    <span class="name">Management &amp; Governance</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_media.png" alt="Media">
-                  </div>
-                  <span class="name">Media</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_media.png" alt="Media">
+                    </div>
+                    <span class="name">Media</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_cloud_migration.png" alt="Migration">
-                  </div>
-                  <span class="name">Migration</span>
+                  <a href="#" target="_blank">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_cloud_migration.png" alt="Migration">
+                    </div>
+                    <span class="name">Migration</span>
+                  </a>
                 </li>
               </ul>
             </section>
@@ -284,37 +317,43 @@
               <h2 class="section_tit">플랫폼 서비스 제공</h2>
               <ul class="main_service_platform">
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_platform_used.png" alt="Frequently used">
-                  </div>
-                  <h3>Frequently used</h3>
-                  <ul>
-                    <li>Egovframework</li>
-                    <li>RabbitMQ 메시지 큐 서비스</li>
-                    <li>Cloud Foundry Staticfile Buildpack</li>
-                  </ul>
+                  <a href="src/pages/platform/platform.html">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_platform_used.png" alt="Frequently used">
+                    </div>
+                    <h3>Frequently used</h3>
+                    <ul>
+                      <li>Egovframework</li>
+                      <li>RabbitMQ 메시지 큐 서비스</li>
+                      <li>Cloud Foundry Staticfile Buildpack</li>
+                    </ul>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_platform_app.png" alt="App Development">
-                  </div>
-                  <h3>App Development</h3>
-                  <ul>
-                    <li>Cloud Foundry Java Buildpack</li>
-                    <li>Cloud Foundry Node.js Buildpack</li>
-                    <li>Cloud Foundry Python Buildpack</li>
-                  </ul>
+                  <a href="src/pages/platform/platform.html">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_platform_app.png" alt="App Development">
+                    </div>
+                    <h3>App Development</h3>
+                    <ul>
+                      <li>Cloud Foundry Java Buildpack</li>
+                      <li>Cloud Foundry Node.js Buildpack</li>
+                      <li>Cloud Foundry Python Buildpack</li>
+                    </ul>
+                  </a>
                 </li>
                 <li>
-                  <div class="ico">
-                    <img src="src/resources/images/icon/ico_platform_service.png" alt="Service">
-                  </div>
-                  <h3>Service</h3>
-                  <ul>
-                    <li>Container Platform Source Control</li>
-                    <li>Container Platform Pipeline</li>
-                    <li>Mysql DBMS 서비스</li>
-                  </ul>
+                  <a href="src/pages/platform/platform.html">
+                    <div class="ico">
+                      <img src="src/resources/images/icon/ico_platform_service.png" alt="Service">
+                    </div>
+                    <h3>Service</h3>
+                    <ul>
+                      <li>Container Platform Source Control</li>
+                      <li>Container Platform Pipeline</li>
+                      <li>Mysql DBMS 서비스</li>
+                    </ul>
+                  </a>
                 </li>
               </ul>
             </section>
@@ -496,6 +535,10 @@
 
 <!-- custom select -->
 <script src="src/resources/js/select.js"></script>
+
+<!-- mobile nav -->
+<script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+<script src="src/resources/js/nav.js"></script>
 
 </body>
 </html>

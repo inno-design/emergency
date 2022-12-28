@@ -1,10 +1,18 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+}
+
 body,
 button,
 input,
 select,
 textarea,
 table {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Noto Sans KR', sans-serif;
   color: #222;
 }
@@ -14,14 +22,15 @@ table {
   min-width: 1260px;
   min-height: 100%;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .content_wrapper {
   width: 100%;
-  max-width: 1480px;
+  max-width: 1488px;
   margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: $m_sides;
+  padding-left: $m_sides;
 }
 
 .header {
@@ -30,6 +39,8 @@ table {
 }
 
 .header_top {
+  z-index: 1;
+  position: relative;
   background-color: #f4f4f4;
 
   .content_wrapper {
@@ -78,12 +89,13 @@ table {
 
 .footer_menu {
   margin-top: 20px;
+  font-size: 15px;
 
   a {
     display: inline-block;
     padding: 10px 25px;
-    font-size: 15px;
     color: #7e7e7e;
+    white-space: nowrap;
 
     &:first-child {
       padding-left: 0;
@@ -98,11 +110,12 @@ table {
 .copyright {
   font-size: 13px;
   color: #959595;
+  line-height: 1.4
 }
 
 
 .container_sub {
-  padding: 4.5rem 0 9rem;
+  padding: 70px 0 140px;
   border-top: 1px solid #dcdcdc;
 
   .section_tit {

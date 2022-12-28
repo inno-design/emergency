@@ -28,6 +28,7 @@
     </div>
     <!-- header_top end -->
     <nav class="header_nav">
+      <button type="button" class="btn_icon btn_nav" onclick="navToggle();"><span class="ico nav">Menu</span></button>
       <div class="content_wrapper">
         <ul class="gnb_main">
           <li class="gnb_main_item">
@@ -54,6 +55,7 @@
           </li>
           <li class="gnb_main_item selected">
             <a href="../digital/data.html">디지털 자원</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
             <div class="gnb_sub_wrapper">
               <div class="content_wrapper">
                 <div class="gnb_sub_tit">디지털 자원</div>
@@ -78,6 +80,7 @@
           </li>
           <li class="gnb_main_item">
             <a href="../community/notice.html">커뮤니티</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
             <div class="gnb_sub_wrapper">
               <div class="content_wrapper">
                 <div class="gnb_sub_tit">커뮤니티</div>
@@ -144,83 +147,83 @@
           <tbody>
           <tr>
             <td class="td_alc td_num">10</td>
-            <td>
+            <td class="td_title">
               <strong class="title">Apache iClouds</strong>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
-            <td class="td_alc"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
+            <td class="td_alc td_btn"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
           </tr>
           <tr>
             <td class="td_alc td_num">9</td>
-            <td>
+            <td class="td_title">
               <strong class="title">Openstack</strong>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
-            <td class="td_alc"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
+            <td class="td_alc td_btn"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
           </tr>
           <tr>
             <td class="td_alc td_num">8</td>
-            <td>
+            <td class="td_title">
               <strong class="title">Kubernetes</strong>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
-            <td class="td_alc"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
+            <td class="td_alc td_btn"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
           </tr>
           <tr>
             <td class="td_alc td_num">7</td>
-            <td>
+            <td class="td_title">
               <strong class="title">ZABBIX</strong>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
-            <td class="td_alc"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
+            <td class="td_alc td_btn"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
           </tr>
           <tr>
             <td class="td_alc td_num">6</td>
-            <td>
+            <td class="td_title">
               <strong class="title">Xen Project</strong>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
-            <td class="td_alc"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
+            <td class="td_alc td_btn"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
           </tr>
           <tr>
             <td class="td_alc td_num">5</td>
-            <td>
+            <td class="td_title">
               <strong class="title">Apache iClouds</strong>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
-            <td class="td_alc"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
+            <td class="td_alc td_btn"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
           </tr>
           <tr>
             <td class="td_alc td_num">4</td>
-            <td>
+            <td class="td_title">
               <strong class="title">Openstack</strong>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
-            <td class="td_alc"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
+            <td class="td_alc td_btn"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
           </tr>
           <tr>
             <td class="td_alc td_num">3</td>
-            <td>
+            <td class="td_title">
               <strong class="title">Kubernetes</strong>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
-            <td class="td_alc"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
+            <td class="td_alc td_btn"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
           </tr>
           <tr>
             <td class="td_alc td_num">2</td>
-            <td>
+            <td class="td_title">
               <strong class="title">ZABBIX</strong>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
-            <td class="td_alc"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
+            <td class="td_alc td_btn"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
           </tr>
           <tr>
             <td class="td_alc td_num">1</td>
-            <td>
+            <td class="td_title">
               <strong class="title">Xen Project</strong>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
-            <td class="td_alc"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
+            <td class="td_alc td_btn"><a href="#" target="_blank" class="link_icon"><img src="../../resources/images/icon/ico_link.svg" alt="바로가기"></a></td>
           </tr>
           </tbody>
         </table>
@@ -259,6 +262,11 @@
     </div>
   </footer>
 </div>
+
+
+<!-- mobile nav -->
+<script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+<script src="../../resources/js/nav.js"></script>
 
 </body>
 </html>

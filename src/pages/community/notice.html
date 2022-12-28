@@ -28,6 +28,7 @@
     </div>
     <!-- header_top end -->
     <nav class="header_nav">
+      <button type="button" class="btn_icon btn_nav" onclick="navToggle();"><span class="ico nav">Menu</span></button>
       <div class="content_wrapper">
         <ul class="gnb_main">
           <li class="gnb_main_item">
@@ -54,6 +55,7 @@
           </li>
           <li class="gnb_main_item">
             <a href="../digital/data.html">디지털 자원</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
             <div class="gnb_sub_wrapper">
               <div class="content_wrapper">
                 <div class="gnb_sub_tit">디지털 자원</div>
@@ -78,6 +80,7 @@
           </li>
           <li class="gnb_main_item selected">
             <a href="../community/notice.html">커뮤니티</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
             <div class="gnb_sub_wrapper">
               <div class="content_wrapper">
                 <div class="gnb_sub_tit">커뮤니티</div>
@@ -142,7 +145,7 @@
           <tbody>
           <tr>
             <td class="td_alc td_num">10</td>
-            <td>
+            <td class="td_title">
               <a href="notice_read.html">클라우드서비스 전문계약제도 설명회 사전질의 이벤트 안내</a>
               <i class="ico new"></i>
             </td>
@@ -150,7 +153,7 @@
           </tr>
           <tr>
             <td class="td_alc td_num">9</td>
-            <td>
+            <td class="td_title">
               <a href="notice_read.html">서비스 정보변경 기능 제공 안내</a>
               <i class="ico new"></i>
             </td>
@@ -158,56 +161,56 @@
           </tr>
           <tr>
             <td class="td_alc td_num">8</td>
-            <td>
+            <td class="td_title">
               <a href="notice_read.html">[기획재정부 보도자료] 정보화사업 낙찰차액 활용범위 확대</a>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
           </tr>
           <tr>
             <td class="td_alc td_num">7</td>
-            <td>
+            <td class="td_title">
               <a href="notice_read.html">도로 위험 상황예보 정보</a>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
           </tr>
           <tr>
             <td class="td_alc td_num">6</td>
-            <td>
+            <td class="td_title">
               <a href="notice_read.html">보호구역 정보</a>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
           </tr>
           <tr>
             <td class="td_alc td_num">5</td>
-            <td>
+            <td class="td_title">
               <a href="notice_read.html">클라우드서비스 전문계약제도 설명회 사전질의 이벤트 안내</a>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
           </tr>
           <tr>
             <td class="td_alc td_num">4</td>
-            <td>
+            <td class="td_title">
               <a href="notice_read.html">서비스 정보변경 기능 제공 안내</a>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
           </tr>
           <tr>
             <td class="td_alc td_num">3</td>
-            <td>
+            <td class="td_title">
               <a href="notice_read.html">[기획재정부 보도자료] 정보화사업 낙찰차액 활용범위 확대</a>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
           </tr>
           <tr>
             <td class="td_alc td_num">2</td>
-            <td>
+            <td class="td_title">
               <a href="notice_read.html">도로 위험 상황예보 정보</a>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
           </tr>
           <tr>
             <td class="td_alc td_num">1</td>
-            <td>
+            <td class="td_title">
               <a href="notice_read.html">보호구역 정보</a>
             </td>
             <td class="td_date">2022. 11. 08  09:12</td>
@@ -249,5 +252,10 @@
     </div>
   </footer>
 </div>
+
+<!-- mobile nav -->
+<script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+<script src="../../resources/js/nav.js"></script>
+
 </body>
 </html>

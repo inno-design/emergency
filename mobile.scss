@@ -15,7 +15,8 @@
 @import "src/resources/styles/componetns/paging";
 
 @import "src/resources/styles/layouts/layouts";
-@import "src/resources/styles/layouts/nav";
+@import "src/resources/styles/mobile/layout_mobile";
+@import "src/resources/styles/mobile/nav";
 @import "src/resources/styles/layouts/common";
 
 @import "src/resources/styles/pages/main";
@@ -26,5 +27,6 @@
 @import "src/resources/styles/pages/serviceApp";
 @import "src/resources/styles/pages/cloud";
 @import "src/resources/styles/pages/faq";
-@import "src/resources/styles/pages/login";
-@import "src/resources/styles/pages/signup";
+
+@import "src/resources/styles/mobile/main_mobile";
+@import "src/resources/styles/mobile/pages";
