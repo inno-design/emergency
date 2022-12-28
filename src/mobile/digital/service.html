@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>Service API - 위기대응 클라우드 플랫폼</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../../mobile.css">
+</head>
+
+<body>
+<div class="wrap">
+  <header class="header">
+    <!-- header_top start -->
+    <div class="header_top">
+      <div class="content_wrapper">
+        <h1 class="header_logo">
+          <a href="/"><img src="../../resources/images/layouts/logo_header.svg" alt="위기대응 클라우드 플랫폼"></a>
+        </h1>
+        <div class="header_util">
+          <a href="../membership/login.html" class="header_login">
+            <i class="ico login"><img src="../../resources/images/icon/ico_user.svg" alt="login"></i>로그인
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- header_top end -->
+    <nav class="header_nav">
+      <button type="button" class="btn_icon btn_nav" onclick="navToggle();"><span class="ico nav">Menu</span></button>
+      <div class="content_wrapper">
+        <ul class="gnb_main">
+          <li class="gnb_main_item">
+            <a href="../introduce/intro.html">소개</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">소개</div>
+                <ul class="gnb_sub">
+                  <li><a href="../introduce/intro.html">소개페이지</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../cloud/cloud.html">민간 클라우드</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">민간 클라우드</div>
+                <ul class="gnb_sub">
+                  <li class="selected"><a href="../cloud/cloud.html">민간 클라우드</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item selected">
+            <a href="../digital/data.html">디지털 자원</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">디지털 자원</div>
+                <ul class="gnb_sub">
+                  <li><a href="../digital/data.html">공공 Data</a></li>
+                  <li class="selected"><a href="../digital/service.html">Service API</a></li>
+                  <li><a href="../digital/sw.html">Open S/W</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../platform/platform.html">플랫폼 서비스</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">플랫폼 서비스</div>
+                <ul class="gnb_sub">
+                  <li><a href="../platform/platform.html">플랫폼 서비스</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../community/notice.html">커뮤니티</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">커뮤니티</div>
+                <ul class="gnb_sub">
+                  <li><a href="../community/notice.html">공지사항</a></li>
+                  <li><a href="../community/faq.html">FAQ</a></li>
+                  <li><a href="../community/qna.html">Q&amp;A</a></li>
+                  <li><a href="../community/newsletter.html">뉴스레터</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="#" target="_blank">가이드<i class="ico link"></i></a>
+          </li>
+        </ul>
+
+        <a href="../service/service.html" class="gnb_service">My Service</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container_sub">
+    <div class="content_wrapper">
+      <!-- sub header start -->
+      <div class="header_sub">
+        <h2 class="sub_title">서비스 API</h2>
+
+        <div class="sub_breadcrumbs">
+          <span class="item">Home</span>
+          <span class="item">디지털 자원</span>
+          <span class="item">서비스 API</span>
+        </div>
+      </div>
+      <!-- sub header end -->
+
+      <hr class="line_pageTit">
+
+      <!-- api service start -->
+      <div class="api_service">
+        <!-- 네이버 start -->
+        <div class="api_category">
+          <h3 class="section_tit">네이버 Open API</h3>
+          <ul class="api_list">
+            <li><a href="#" target="_blank" class="api_link">Maps</a></li>
+            <li><a href="#" target="_blank" class="api_link">CAPTCHA</a></li>
+            <li><a href="#" target="_blank" class="api_link">CLOVA</a></li>
+            <li><a href="#" target="_blank" class="api_link">nShort URL</a></li>
+            <li><a href="#" target="_blank" class="api_link">간편 로그인<span>(네이버)</span></a></li>
+            <li><a href="#" target="_blank" class="api_link">네이버 공유하기</a></li>
+          </ul>
+        </div>
+        <!-- 네이버 end -->
+
+        <!-- 카카오 start -->
+        <div class="api_category">
+          <h3 class="section_tit">카카오 Open API</h3>
+          <ul class="api_list">
+            <li><a href="#" target="_blank" class="api_link">카카오맵</a></li>
+            <li><a href="#" target="_blank" class="api_link">간편 로그인<span>(카카오)</span></a></li>
+            <li><a href="#" target="_blank" class="api_link">메시지</a></li>
+            <li><a href="#" target="_blank" class="api_link">검색/찾기<span>(카카오)</span></a></li>
+            <li><a href="#" target="_blank" class="api_link">음성인식</a></li>
+            <li><a href="#" target="_blank" class="api_link">번역기능</a></li>
+          </ul>
+        </div>
+        <!-- 카카오 end -->
+
+        <!-- ETRI start -->
+        <div class="api_category">
+          <h3 class="section_tit">ETRI 공공 API</h3>
+          <ul class="api_list">
+            <li><a href="#" target="_blank" class="api_link">언어처리<span>(언어분석)</span></a></li>
+            <li><a href="#" target="_blank" class="api_link">음성지능<span>(음성인식)</span></a></li>
+            <li><a href="#" target="_blank" class="api_link">시작지능<span>(이미지 인식)</span></a></li>
+            <li><a href="#" target="_blank" class="api_link">대화처리<span>(대화처리)</span></a></li>
+          </ul>
+        </div>
+        <!-- ETRI end -->
+
+        <!-- 구글 start -->
+        <div class="api_category">
+          <h3 class="section_tit">구글 Open API</h3>
+          <ul class="api_list">
+            <li><a href="#" target="_blank" class="api_link">구글 맵</a></li>
+            <li><a href="#" target="_blank" class="api_link">구글 번역</a></li>
+            <li><a href="#" target="_blank" class="api_link">유튜브<span>(Youtube)</span></a></li>
+            <li><a href="#" target="_blank" class="api_link">구글 캘린더</a></li>
+            <li><a href="#" target="_blank" class="api_link">간편 로그인<span>(구글)</span></a></li>
+            <li><a href="#" target="_blank" class="api_link">검색/찾기</a></li>
+          </ul>
+        </div>
+        <!-- 구글 end -->
+
+        <!-- 주소 기반 start -->
+        <div class="api_category">
+          <h3 class="section_tit">주소 기반 산업지원</h3>
+          <ul class="api_list">
+            <li><a href="#" target="_blank" class="api_link">도로명주소</a></li>
+            <li><a href="#" target="_blank" class="api_link">검색/찾기<span>(주소 기반 산업지원)</span></a></li>
+          </ul>
+        </div>
+        <!-- 주소 기반 end -->
+
+        <!-- 다음 start -->
+        <div class="api_category">
+          <h3 class="section_tit">다음 Open API</h3>
+          <ul class="api_list">
+            <li><a href="#" target="_blank" class="api_link">Mail</a></li>
+            <li><a href="#" target="_blank" class="api_link">CAPTCHA</a></li>
+            <li><a href="#" target="_blank" class="api_link">웹툰</a></li>
+            <li><a href="#" target="_blank" class="api_link">검색/찾기<span>(다음)</span></a></li>
+            <li><a href="#" target="_blank" class="api_link">사전 기능</a></li>
+          </ul>
+        </div>
+        <!-- 다음 end -->
+
+        <!-- KOSIS start -->
+        <div class="api_category">
+          <h3 class="section_tit">KOSIS 공유 API</h3>
+          <ul class="api_list">
+            <li><a href="#" target="_blank" class="api_link">통계자료</a></li>
+            <li><a href="#" target="_blank" class="api_link">검색/찾기<span>(KOSIS)</span></a></li>
+            <li><a href="#" target="_blank" class="api_link">대용량 통계자료</a></li>
+            <li><a href="#" target="_blank" class="api_link">통계주요지표</a></li>
+          </ul>
+        </div>
+        <!-- KOSIS end -->
+
+      </div>
+      <!-- api service end -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="content_wrapper">
+      <nav class="footer_nav">
+        <h2 class="footer_logo"><img src="../../resources/images/layouts/logo_header.svg" alt="위기대응 클라우드 플랫폼"></h2>
+        <div class="footer_menu">
+          <a href="../terms/terms.html">이용약관</a>
+          <a href="../terms/service.html">서비스약관</a>
+          <a href="../terms/policy.html">운영정책</a>
+          <a href="../terms/private.html"><strong>개인정보처리방침</strong></a>
+        </div>
+      </nav>
+      <p class="copyright">
+        Copyright © 2022 Developers Cloud Emergency. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</div>
+
+<!-- mobile nav -->
+<script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+<script src="../../resources/js/nav.js"></script>
+
+</body>
+</html>

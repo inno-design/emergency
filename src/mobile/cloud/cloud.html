@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>민간 클라우드 - 위기대응 클라우드 플랫폼</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../../mobile.css">
+</head>
+
+<body>
+<div class="wrap">
+  <header class="header">
+    <!-- header_top start -->
+    <div class="header_top">
+      <div class="content_wrapper">
+        <h1 class="header_logo">
+          <a href="/"><img src="../../resources/images/layouts/logo_header.svg" alt="위기대응 클라우드 플랫폼"></a>
+        </h1>
+        <div class="header_util">
+          <a href="../membership/login.html" class="header_login">
+            <i class="ico login"><img src="../../resources/images/icon/ico_user.svg" alt="login"></i>로그인
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- header_top end -->
+    <nav class="header_nav">
+      <button type="button" class="btn_icon btn_nav" onclick="navToggle();"><span class="ico nav">Menu</span></button>
+      <div class="content_wrapper">
+        <ul class="gnb_main">
+          <li class="gnb_main_item">
+            <a href="../introduce/intro.html">소개</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">소개</div>
+                <ul class="gnb_sub">
+                  <li><a href="../introduce/intro.html">소개페이지</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item selected">
+            <a href="../cloud/cloud.html">민간 클라우드</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">민간 클라우드</div>
+                <ul class="gnb_sub">
+                  <li class="selected"><a href="../cloud/cloud.html">민간 클라우드</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../digital/data.html">디지털 자원</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">디지털 자원</div>
+                <ul class="gnb_sub">
+                  <li><a href="../digital/data.html">공공 Data</a></li>
+                  <li><a href="../digital/service.html">Service API</a></li>
+                  <li><a href="../digital/sw.html">Open S/W</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../platform/platform.html">플랫폼 서비스</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">플랫폼 서비스</div>
+                <ul class="gnb_sub">
+                  <li><a href="../platform/platform.html">플랫폼 서비스</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../community/notice.html">커뮤니티</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">커뮤니티</div>
+                <ul class="gnb_sub">
+                  <li><a href="../community/notice.html">공지사항</a></li>
+                  <li><a href="../community/faq.html">FAQ</a></li>
+                  <li><a href="../community/qna.html">Q&amp;A</a></li>
+                  <li><a href="../community/newsletter.html">뉴스레터</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="#" target="_blank">가이드<i class="ico link"></i></a>
+          </li>
+        </ul>
+
+        <a href="../service/service.html" class="gnb_service">My Service</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container_sub">
+    <div class="content_wrapper">
+      <!-- sub header start -->
+      <div class="header_sub">
+        <h2 class="sub_title">민간 클라우드</h2>
+
+        <div class="sub_breadcrumbs">
+          <span class="item">Home</span>
+          <span class="item">민간 클라우드</span>
+        </div>
+      </div>
+      <!-- sub header end -->
+
+      <hr class="line_pageTit">
+
+      <!-- cloud service start -->
+      <div class="cloud_service">
+        <!-- Compute start -->
+        <div class="cloud_category c1">
+          <h3 class="section_tit">Compute</h3>
+          <ul class="cloud_list">
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Server</h4>
+                <p class="txt">클라우드 상에서 서버를 생성하고 확장할 수 있는 서비스</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>SSD Server</h4>
+                <p class="txt">빠른 입출력(I/O) 처리가 가능한 SSD가 장착된 서버를 제공하는 서비스</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>GPU Server</h4>
+                <p class="txt">병렬 연산에 최적화된 GPU 서버의 고성능 컴퓨팅 파워를 제공하는 서비스</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Compute end -->
+
+        <!-- Storage start -->
+        <div class="cloud_category c2">
+          <h3 class="section_tit">Storage</h3>
+          <ul class="cloud_list">
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Object Storage</h4>
+                <p class="txt">모든 종류의 데이터를 인터넷상에 저장/검색할 수 있는 객체 스토리지  </p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Archive Storage</h4>
+                <p class="txt">데이터 아카이빙 및 장기 백업에 최적화된 스토리지</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Block Storage</h4>
+                <p class="txt">데이터를 블록 단위로 분할하고 고유 식별자를 부여/저장하는 스토리지</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Storage end -->
+
+        <!-- Containers start -->
+        <div class="cloud_category c3">
+          <h3 class="section_tit">Containers</h3>
+          <ul class="cloud_list">
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Container Registry</h4>
+                <p class="txt">도커 컨테이너 이미지를 간편하게 저장, 관리, 배포할 수 있는 서비스 </p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Kubernetes Service</h4>
+                <p class="txt">쿠버네티스 기반으로 컨테이너화된 앱을 배포/관리할 수 있는 서비스</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Containers end -->
+
+        <!-- Networking start -->
+        <div class="cloud_category c4">
+          <h3 class="section_tit">Networking</h3>
+          <ul class="cloud_list">
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>VPU<span>(Virtual Private Cloud)</span></h4>
+                <p class="txt">퍼블릭 클라우드 상에서 제공되는 고객 전용 사설 네트워크 공간 </p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Load Balancer</h4>
+                <p class="txt">서버 성능과 부하량을 고려하여 네트워크 트래픽을 분산해주는 서비스</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Cloud Connect</h4>
+                <p class="txt">데이터 센터 환경과 네이버 클라우드 플랫폼을 전용 사설로 연결 가능</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Networking end -->
+
+        <!-- Database start -->
+        <div class="cloud_category c5">
+          <h3 class="section_tit">Database</h3>
+          <ul class="cloud_list">
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Cloud DB for PostgreSQL</h4>
+                <p class="txt">PostgreSQL 서비스를 손쉽게 구축하고 자동으로 관리</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Cloud DB for MySQL</h4>
+                <p class="txt">MySQL 데이터베이스 서비스를 손쉽게 구축하고 자동으로 관리</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Cloud DB for Redis</h4>
+                <p class="txt">Redis 캐시를 클라우드 상에서 간편하게 구축하고 안정적으로 운영 가능</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Database end -->
+
+        <!-- Security start -->
+        <div class="cloud_category c6">
+          <h3 class="section_tit">Security</h3>
+          <ul class="cloud_list">
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Secure Zone</h4>
+                <p class="txt">개인정보 등 중요 정보자원을 보안이 강화된 별도 Zone에서 관리하는 서비스</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Basic Security</h4>
+                <p class="txt">모든 고객에게 기본으로 제공되는 무료 보안 서비스</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>ACG</h4>
+                <p class="txt">IP 기반 필터링 기능으로 서버로의 네트워크 접근을 관리하는 서비스 </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Security end -->
+
+        <!-- AI start -->
+        <div class="cloud_category c7">
+          <h3 class="section_tit">AI Services</h3>
+          <ul class="cloud_list">
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>AiTEMS</h4>
+                <p class="txt">사용자별 이력을 분석하여 관심사와 취향에 맞는 상품을 추천하는 서비스 </p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>CLOVA AiCall</h4>
+                <p class="txt">AI 기능을 기반으로 고객센터를 구축/운영할 수 있는 서비스</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>CLOVA Chatbot</h4>
+                <p class="txt">마케팅, 고객 응대 등 다양한 서비스에 활용할 수 있는 챗봇 생성 서비스  </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- AI end -->
+
+        <!-- Application start -->
+        <div class="cloud_category c8">
+          <h3 class="section_tit">Application Services</h3>
+          <ul class="cloud_list">
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>GeoLocation</h4>
+                <p class="txt">사용자 IP 기반의 위치 정보를 제공하는 API</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Maps</h4>
+                <p class="txt">네이버 지도 기능을 활용하여 위치 기반 서비스를 만들 수 있는 API</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>CAPTCHA</h4>
+                <p class="txt">다양한 방식으로 사람과 컴퓨터를 판별/어뷰징을 방지할 수 있는 서비스</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Application end -->
+
+        <!-- Big Data start -->
+        <div class="cloud_category c9">
+          <h3 class="section_tit">Big Data &amp; Analytics</h3>
+          <ul class="cloud_list">
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Cloud Hadoop</h4>
+                <p class="txt">Cloud Hadoop</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Cloud Search</h4>
+                <p class="txt">웹사이트의 검색 기능을 간편하게 설정/관리할 수 있는 관리형 서비스</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="cloud_link">
+                <h4>Search Engine Services</h4>
+                <p class="txt">다양한 데이터를 검색/분석/시각화할 수 있는 관리형 서비스</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Big Data end -->
+
+      </div>
+      <!-- cloud service end -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="content_wrapper">
+      <nav class="footer_nav">
+        <h2 class="footer_logo"><img src="../../resources/images/layouts/logo_header.svg" alt="위기대응 클라우드 플랫폼"></h2>
+        <div class="footer_menu">
+          <a href="../terms/terms.html">이용약관</a>
+          <a href="../terms/service.html">서비스약관</a>
+          <a href="../terms/policy.html">운영정책</a>
+          <a href="../terms/private.html"><strong>개인정보처리방침</strong></a>
+        </div>
+      </nav>
+      <p class="copyright">
+        Copyright © 2022 Developers Cloud Emergency. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</div>
+
+<!-- mobile nav -->
+<script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+<script src="../../resources/js/nav.js"></script>
+
+</body>
+</html>

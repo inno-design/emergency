@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>플랫폼 서비스 - 위기대응 클라우드 플랫폼</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../../mobile.css">
+</head>
+
+<body>
+<div class="wrap">
+  <header class="header">
+    <!-- header_top start -->
+    <div class="header_top">
+      <div class="content_wrapper">
+        <h1 class="header_logo">
+          <a href="/"><img src="../../resources/images/layouts/logo_header.svg" alt="위기대응 클라우드 플랫폼"></a>
+        </h1>
+        <div class="header_util">
+          <a href="../membership/login.html" class="header_login">
+            <i class="ico login"><img src="../../resources/images/icon/ico_user.svg" alt="login"></i>로그인
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- header_top end -->
+    <nav class="header_nav">
+      <button type="button" class="btn_icon btn_nav" onclick="navToggle();"><span class="ico nav">Menu</span></button>
+      <div class="content_wrapper">
+        <ul class="gnb_main">
+          <li class="gnb_main_item">
+            <a href="../introduce/intro.html">소개</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">소개</div>
+                <ul class="gnb_sub">
+                  <li><a href="../introduce/intro.html">소개페이지</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../cloud/cloud.html">민간 클라우드</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">민간 클라우드</div>
+                <ul class="gnb_sub">
+                  <li><a href="../cloud/cloud.html">민간 클라우드</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../digital/data.html">디지털 자원</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">디지털 자원</div>
+                <ul class="gnb_sub">
+                  <li><a href="../digital/data.html">공공 Data</a></li>
+                  <li><a href="../digital/service.html">Service API</a></li>
+                  <li><a href="../digital/sw.html">Open S/W</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item selected">
+            <a href="../platform/platform.html">플랫폼 서비스</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">플랫폼 서비스</div>
+                <ul class="gnb_sub">
+                  <li class="selected"><a href="../platform/platform.html">플랫폼 서비스</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../community/notice.html">커뮤니티</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">커뮤니티</div>
+                <ul class="gnb_sub">
+                  <li><a href="../community/notice.html">공지사항</a></li>
+                  <li><a href="../community/faq.html">FAQ</a></li>
+                  <li><a href="../community/qna.html">Q&amp;A</a></li>
+                  <li><a href="../community/newsletter.html">뉴스레터</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="#" target="_blank">가이드<i class="ico link"></i></a>
+          </li>
+        </ul>
+
+        <a href="../service/service.html" class="gnb_service">My Service</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container_sub">
+    <div class="content_wrapper">
+      <!-- sub header start -->
+      <div class="header_sub">
+        <h2 class="sub_title">플랫폼 서비스</h2>
+
+        <div class="sub_breadcrumbs">
+          <span class="item">Home</span>
+          <span class="item">플랫폼 서비스</span>
+          <span class="item">Nginx</span>
+        </div>
+      </div>
+      <!-- sub header end -->
+
+      <!-- mobile view start -->
+      <div class="mobile_notice">
+        <p class="mobile_msg">자세한 내용 보기는 PC로<br>접속하시면 확인할 수 있습니다.</p>
+        <div class="board_btns">
+          <button type="button" class="btn_comm submit lg">확인</button>
+        </div>
+      </div>
+      <!-- mobile view end -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="content_wrapper">
+      <nav class="footer_nav">
+        <h2 class="footer_logo"><img src="../../resources/images/layouts/logo_header.svg" alt="위기대응 클라우드 플랫폼"></h2>
+        <div class="footer_menu">
+          <a href="../terms/terms.html">이용약관</a>
+          <a href="../terms/service.html">서비스약관</a>
+          <a href="../terms/policy.html">운영정책</a>
+          <a href="../terms/private.html"><strong>개인정보처리방침</strong></a>
+        </div>
+      </nav>
+      <p class="copyright">
+        Copyright © 2022 Developers Cloud Emergency. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</div>
+
+<!-- custom select -->
+<script src="../../resources/js/select.js"></script>
+
+<!-- 테스트용 삽입 - input file -->
+<script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#file").on('change',function(){
+      const cur = $(this).parent().find("input[type='file']").val();
+      $(this).parent().find("input[type='text']").val(cur);
+    });
+  });
+</script>
+
+
+<!-- mobile nav -->
+<script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+<script src="../../resources/js/nav.js"></script>
+
+</body>
+</html>

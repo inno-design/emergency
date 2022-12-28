@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>Q&amp;A - 위기대응 클라우드 플랫폼</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../../mobile.css">
+</head>
+
+<body>
+<div class="wrap">
+  <header class="header">
+    <!-- header_top start -->
+    <div class="header_top">
+      <div class="content_wrapper">
+        <h1 class="header_logo">
+          <a href="/"><img src="../../resources/images/layouts/logo_header.svg" alt="위기대응 클라우드 플랫폼"></a>
+        </h1>
+        <div class="header_util">
+          <a href="../membership/login.html" class="header_login">
+            <i class="ico login"><img src="../../resources/images/icon/ico_user.svg" alt="login"></i>로그인
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- header_top end -->
+    <nav class="header_nav">
+      <button type="button" class="btn_icon btn_nav" onclick="navToggle();"><span class="ico nav">Menu</span></button>
+      <div class="content_wrapper">
+        <ul class="gnb_main">
+          <li class="gnb_main_item">
+            <a href="../introduce/intro.html">소개</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">소개</div>
+                <ul class="gnb_sub">
+                  <li><a href="../introduce/intro.html">소개페이지</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../cloud/cloud.html">민간 클라우드</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">민간 클라우드</div>
+                <ul class="gnb_sub">
+                  <li><a href="../cloud/cloud.html">민간 클라우드</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../digital/data.html">디지털 자원</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">디지털 자원</div>
+                <ul class="gnb_sub">
+                  <li><a href="../digital/data.html">공공 Data</a></li>
+                  <li><a href="../digital/service.html">Service API</a></li>
+                  <li><a href="../digital/sw.html">Open S/W</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../platform/platform.html">플랫폼 서비스</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">플랫폼 서비스</div>
+                <ul class="gnb_sub">
+                  <li><a href="../platform/platform.html">플랫폼 서비스</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item selected">
+            <a href="../community/notice.html">커뮤니티</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">커뮤니티</div>
+                <ul class="gnb_sub">
+                  <li><a href="../community/notice.html">공지사항</a></li>
+                  <li><a href="../community/faq.html">FAQ</a></li>
+                  <li class="selected"><a href="../community/qna.html">Q&amp;A</a></li>
+                  <li><a href="../community/newsletter.html">뉴스레터</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="#" target="_blank">가이드<i class="ico link"></i></a>
+          </li>
+        </ul>
+
+        <a href="../service/service.html" class="gnb_service">My Service</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container_sub">
+    <div class="content_wrapper">
+      <!-- sub header start -->
+      <div class="header_sub">
+        <h2 class="sub_title">Q&amp;A</h2>
+
+        <div class="sub_breadcrumbs">
+          <span class="item">Home</span>
+          <span class="item">커뮤니티</span>
+          <span class="item">Q&amp;A</span>
+        </div>
+      </div>
+      <!-- sub header end -->
+
+      <!-- board start -->
+      <div class="board_read_wrapper">
+        <div class="board_read_header sub">
+          <h3 class="board_title sub">문의하기</h3>
+          <span class="board_date">2022. 11. 08  09:12</span>
+        </div>
+
+        <form>
+          <table class="table_write">
+            <tr>
+              <th>제목</th>
+              <td><input type="text" title="제목" placeholder="제목을 입력해주세요." class="form_textfield err"></td>
+            </tr>
+            <tr>
+              <th>내용</th>
+              <td>
+                <textarea title="내용" cols="50" rows="5" class="form_textarea err" placeholder="내용을 입력해주세요."></textarea>
+              </td>
+            </tr>
+            <tr>
+              <th>메일주소</th>
+              <td><input type="text" title="메일주소" placeholder="메일주소를 입력해주세요." class="form_textfield"></td>
+            </tr>
+            <tr>
+              <th>비밀번호</th>
+              <td>
+                <div class="tdpw_container">
+                  <input type="password" title="비밀번호" placeholder="비밀번호 4자리" class="form_textfield">
+                  <label class="chk_custom">
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                  </label>
+                  <p class="msg_notice">비밀글 작성시 체크박스에 체크 후 비밀번호를 입력해 주세요.</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <div class="board_btns">
+            <button type="button" class="btn_comm cancel lg" onclick="dialogOpen('cancelPopup')">취소</button>
+            <button type="submit" class="btn_comm submit lg">제출</button>
+          </div>
+        </form>
+
+      </div>
+      <!-- board end -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="content_wrapper">
+      <nav class="footer_nav">
+        <h2 class="footer_logo"><img src="../../resources/images/layouts/logo_header.svg" alt="위기대응 클라우드 플랫폼"></h2>
+        <div class="footer_menu">
+          <a href="../terms/terms.html">이용약관</a>
+          <a href="../terms/service.html">서비스약관</a>
+          <a href="../terms/policy.html">운영정책</a>
+          <a href="../terms/private.html"><strong>개인정보처리방침</strong></a>
+        </div>
+      </nav>
+      <p class="copyright">
+        Copyright © 2022 Developers Cloud Emergency. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- 앱 이름 변경 dialog start -->
+  <div class="pop_wrap hide" id="cancelPopup">
+    <div class="pop_box">
+      <div class="pop_container">
+        <div class="pop_content">
+          <div class="pop_alert">
+            <div>
+              <i class="ico alert"></i>
+            </div>
+            <p class="tit">취소하시겠습니까?</p>
+            <p class="txt">
+              '취소하기' 를 계속 진행하시면 작성하던<br>
+              내용은 삭제되며 목록으로 되돌아갑니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="pop_footer">
+        <button type="button" class="btn_pop cancel" onclick="dialogClose('cancelPopup')">취소</button>
+        <button type="button" class="btn_pop submit">확인</button>
+      </div>
+    </div>
+  </div>
+  <!-- 앱 이름 변경 dialog end -->
+</div>
+
+<script>
+  <!--Dialog 열기/닫기-->
+  const dialogOpen = function(id){
+    document.getElementById(id).classList.remove("hide");
+    document.body.style.overflow = "hidden";
+  }
+
+  const dialogClose = function(id){
+    document.getElementById(id).classList.add("hide");
+    document.body.style.overflow = "auto";
+  }
+</script>
+
+<!-- mobile nav -->
+<script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+<script src="../../resources/js/nav.js"></script>
+
+</body>
+</html>

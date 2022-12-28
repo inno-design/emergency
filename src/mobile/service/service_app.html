@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Service - 위기대응 클라우드 플랫폼</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../../mobile.css">
+  <link rel="stylesheet" href="../../resources/js/vendors/swiper-bundle.min.css">
+</head>
+
+<body>
+<div class="wrap">
+  <header class="header">
+    <!-- header_top start -->
+    <div class="header_top">
+      <div class="content_wrapper">
+        <h1 class="header_logo">
+          <a href="/"><img src="../../resources/images/layouts/logo_header.svg" alt="위기대응 클라우드 플랫폼"></a>
+        </h1>
+        <div class="header_util">
+          <a href="../membership/login.html" class="header_login">
+            <i class="ico login"><img src="../../resources/images/icon/ico_user.svg" alt="login"></i>로그인
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- header_top end -->
+    <nav class="header_nav">
+      <button type="button" class="btn_icon btn_nav" onclick="navToggle();"><span class="ico nav">Menu</span></button>
+      <div class="content_wrapper">
+        <ul class="gnb_main">
+          <li class="gnb_main_item">
+            <a href="../introduce/intro.html">소개</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">소개</div>
+                <ul class="gnb_sub">
+                  <li><a href="../introduce/intro.html">소개페이지</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../cloud/cloud.html">민간 클라우드</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">민간 클라우드</div>
+                <ul class="gnb_sub">
+                  <li><a href="../cloud/cloud.html">민간 클라우드</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../digital/data.html">디지털 자원</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">디지털 자원</div>
+                <ul class="gnb_sub">
+                  <li><a href="../digital/data.html">공공 Data</a></li>
+                  <li><a href="../digital/service.html">Service API</a></li>
+                  <li><a href="../digital/sw.html">Open S/W</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../platform/platform.html">플랫폼 서비스</a>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">플랫폼 서비스</div>
+                <ul class="gnb_sub">
+                  <li><a href="../platform/platform.html">플랫폼 서비스</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="../community/notice.html">커뮤니티</a>
+            <button type="button" class="btn_icon btn_subnav" onclick="subnavToggle();"><span class="ico subnav">Open</span></button>
+            <div class="gnb_sub_wrapper">
+              <div class="content_wrapper">
+                <div class="gnb_sub_tit">커뮤니티</div>
+                <ul class="gnb_sub">
+                  <li><a href="../community/notice.html">공지사항</a></li>
+                  <li><a href="../community/faq.html">FAQ</a></li>
+                  <li><a href="../community/qna.html">Q&amp;A</a></li>
+                  <li><a href="../community/newsletter.html">뉴스레터</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="gnb_main_item">
+            <a href="#" target="_blank">가이드<i class="ico link"></i></a>
+          </li>
+        </ul>
+
+        <a href="../service/service.html" class="gnb_service">My Service</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container_sub">
+    <div class="content_wrapper">
+      <!-- sub header start -->
+      <div class="header_sub">
+        <h2 class="sub_title">My Service</h2>
+        <div class="sub_breadcrumbs">
+          <span class="item">Home</span>
+          <span class="item">My Service</span>
+          <span class="item">Service</span>
+        </div>
+      </div>
+      <!-- sub header end -->
+
+      <!-- tab start -->
+      <div class="tab_container">
+        <div class="tab_buttons">
+          <a href="service.html" class="btn selected">Service</a>
+          <a href="service_account.html" class="btn">Account</a>
+        </div>
+
+        <a href="service.html" class="link_back"><i class="ico back"></i>뒤로 가기</a>
+
+        <section class="app_dashboard">
+          <!-- 좌측 패널 start -->
+          <div class="app_panel_container summary">
+            <div class="panel_comm state stop"><!-- panel_comm state start -->
+              <div class="titlebar">
+                <span class="title">Stopped</span>
+              </div>
+
+              <div class="contentbox">
+                <div class="app_summary">
+                  <div class="app_name">
+                    <h3 class="name">Sample 005</h3>
+                    <p class="txt">Sample 005 의 설명이 들어갑니다. 개요 페이지에 대한 상세 설명이 들어갑니다. 들어갑니다.</p>
+                    <button type="button" class="btn_menu" onclick="popMenu()"><span class="ico menu"></span></button>
+
+                    <!-- service pop menu start -->
+                    <div class="service_app_pop hide js-popMenu">
+                      <ul class="list_action">
+                        <li>
+                          <span class="label">앱 이름 변경</span>
+                          <button type="button" class="btn_icon" onclick="dialogOpen('servicePop03')"><span class="ico edit">edit</span></button>
+                        </li>
+                        <li>
+                          <span class="label">재시작</span>
+                          <button type="button" class="btn_icon" onclick="dialogOpen('servicePop01')"><span class="ico refresh">restart</span></button>
+                        </li>
+                        <li>
+                          <span class="label">삭제</span>
+                          <button type="button" class="btn_icon" onclick="dialogOpen('servicePop02')"><span class="ico del">delete</span></button>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- service pop menu end -->
+                  </div>
+                  <hr class="line_section">
+                  <ul class="list_info">
+                    <li>
+                      <span class="label">앱 URL</span>
+                      <span class="value"><a href="#" target="_blank">http://www.urllink.co.kr/homes/url</a></span>
+                    </li>
+                    <li>
+                      <span class="label">마지막 푸시</span>
+                      <span class="value">2022. 10. 17  08:14:27</span>
+                    </li>
+                    <li>
+                      <span class="label">빌드팩</span>
+                      <span class="value">java</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 좌측 패널 end -->
+
+          <!-- 우측 패널 start -->
+          <div class="app_panel_container">
+            <!-- panel -->
+            <div class="panel_comm">
+              <div class="titlebar">
+                <span class="title">Instance</span>
+                <button type="button" class="btn_comm">수정</button>
+              </div>
+              <div class="contentbox">
+                <div class="app_data">
+                  <div class="value_container">
+                    <span class="value">3</span>
+                    <span class="max">/ 최대 100개</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- panel -->
+            <div class="panel_comm">
+              <div class="titlebar">
+                <span class="title">Memory</span>
+                <button type="button" class="btn_comm">수정</button>
+              </div>
+              <div class="contentbox">
+                <div class="app_data">
+                  <div class="value_container">
+                    <span class="value">2</span>
+                    <span class="unit">GB</span>
+                    <span class="max">/ 최대 8GB</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- panel -->
+            <div class="panel_comm">
+              <div class="titlebar">
+                <span class="title">CPU</span>
+                <button type="button" class="btn_comm">수정</button>
+              </div>
+              <div class="contentbox">
+                <div class="app_data">
+                  <div class="value_container">
+                    <span class="value">0.68</span>
+                    <span class="unit">%</span>
+                    <span class="max">/ 최대 100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- panel 수정모드 -->
+            <div class="panel_comm edit">
+              <div class="titlebar">
+                <span class="title">Storage</span>
+                <button type="button" class="btn_comm cancel">취소</button>
+                <button type="button" class="btn_comm submit">저장</button>
+              </div>
+              <div class="contentbox">
+                <div class="app_data">
+                  <div class="value_container">
+                    <input type="text" value="10" class="input_value">
+                    <span class="unit">GB</span>
+                    <span class="max">/ 최대 100GB</span>
+                  </div>
+                  <div class="value_controller">
+                    <button type="button" class="btn_icon"><span class="ico up">up</span></button>
+                    <button type="button" class="btn_icon"><span class="ico down">down</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 우측 패널 end -->
+        </section>
+
+        <hr class="line_section">
+
+        <section class="app_board">
+          <!-- panel -->
+          <div class="panel_comm ">
+            <div class="titlebar">
+              <span class="title">Event</span>
+              <button type="button" class="btn_icon" onclick="expandPanel(this)"><span class="ico expand">확대</span></button>
+            </div>
+            <div class="contentbox">
+              <div class="table_wrapper scrollable">
+                <table class="table_panel">
+                  <thead>
+                  <tr>
+                    <th>State</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td><span class="state run">Running</span></td>
+                    <td>Audit.app.droplet.</td>
+                    <td>2022. 10. 31  08:09:10</td>
+                  </tr>
+                  <tr>
+                    <td><span class="state stop">Stopped</span></td>
+                    <td>Audit.app.droplet.</td>
+                    <td>2022. 10. 31  08:09:10</td>
+                  </tr>
+                  <tr>
+                    <td><span class="state err">Error</span></td>
+                    <td>Audit.app.droplet.</td>
+                    <td>2022. 10. 31  08:09:10</td>
+                  </tr>
+                  <tr>
+                    <td><span class="state run">Running</span></td>
+                    <td>Audit.app.droplet.</td>
+                    <td>2022. 10. 31  08:09:10</td>
+                  </tr>
+                  <tr>
+                    <td><span class="state run">Running</span></td>
+                    <td>Audit.app.droplet.</td>
+                    <td>2022. 10. 31  08:09:10</td>
+                  </tr>
+                  <tr>
+                    <td><span class="state run">Running</span></td>
+                    <td>Audit.app.droplet.</td>
+                    <td>2022. 10. 31  08:09:10</td>
+                  </tr>
+                  <tr>
+                    <td><span class="state run">Running</span></td>
+                    <td>Audit.app.droplet.</td>
+                    <td>2022. 10. 31  08:09:10</td>
+                  </tr>
+                  <tr>
+                    <td><span class="state run">Running</span></td>
+                    <td>Audit.app.droplet.</td>
+                    <td>2022. 10. 31  08:09:10</td>
+                  </tr>
+                  <tr>
+                    <td><span class="state run">Running</span></td>
+                    <td>Audit.app.droplet.</td>
+                    <td>2022. 10. 31  08:09:10</td>
+                  </tr>
+                  <tr>
+                    <td><span class="state run">Running</span></td>
+                    <td>Audit.app.droplet.</td>
+                    <td>2022. 10. 31  08:09:10</td>
+                  </tr>
+                  <tr>
+                    <td><span class="state run">Running</span></td>
+                    <td>Audit.app.droplet.</td>
+                    <td>2022. 10. 31  08:09:10</td>
+                  </tr>
+                  <tr>
+                    <td><span class="state run">Running</span></td>
+                    <td>Audit.app.droplet.</td>
+                    <td>2022. 10. 31  08:09:10</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- panel -->
+          <div class="panel_comm">
+            <div class="titlebar">
+              <span class="title">State</span>
+              <button type="button" class="btn_icon" onclick="expandPanel(this)"><span class="ico expand">확대</span></button>
+            </div>
+            <div class="contentbox">
+              <div class="table_wrapper scrollable">
+                <table class="table_panel">
+                  <thead>
+                  <tr>
+                    <th>State</th>
+                    <th>CPU</th>
+                    <th>Memory</th>
+                    <th>Disk</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td><span class="state run">Running</span></td>
+                    <td>0.54%</td>
+                    <td>171.23 MB</td>
+                    <td>136.05 MB</td>
+                  </tr>
+                  <tr>
+                    <td><span class="state run">Running</span></td>
+                    <td>0.54%</td>
+                    <td>171.23 MB</td>
+                    <td>136.05 MB</td>
+                  </tr>
+                  <tr>
+                    <td><span class="state run">Running</span></td>
+                    <td>0.54%</td>
+                    <td>171.23 MB</td>
+                    <td>136.05 MB</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- panel -->
+          <div class="panel_comm">
+            <div class="titlebar">
+              <span class="title">Route</span>
+              <button type="button" class="btn_icon" onclick="expandPanel(this)"><span class="ico expand">확대</span></button>
+            </div>
+            <div class="contentbox">
+              <div class="table_wrapper scrollable">
+                <table class="table_panel">
+                  <thead>
+                  <tr>
+                    <th>Route Name</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td><a href="#">Sample 001.paas-to.org</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Sample.Sample 002.paas-to.org </a></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- panel -->
+          <div class="panel_comm">
+            <div class="titlebar">
+              <span class="title">Environment Variable</span>
+              <button type="button" class="btn_icon" onclick="expandPanel(this)"><span class="ico expand">확대</span></button>
+            </div>
+            <div class="contentbox">
+              <div class="table_wrapper scrollable">
+                <table class="table_panel">
+                  <thead>
+                  <tr>
+                    <th>TBD</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Environment Category-001</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- panel -->
+          <div class="panel_comm">
+            <div class="titlebar">
+              <span class="title">Services</span>
+              <button type="button" class="btn_icon" onclick="expandPanel(this)"><span class="ico expand">확대</span></button>
+            </div>
+            <div class="contentbox">
+              <div class="table_wrapper scrollable">
+                <table class="table_panel">
+                  <thead>
+                  <tr>
+                    <th>Name</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Service Name 001</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- panel -->
+          <div class="panel_comm">
+            <div class="titlebar">
+              <span class="title">Logs</span>
+              <button type="button" class="btn_icon" onclick="expandPanel(this)"><span class="ico expand">확대</span></button>
+            </div>
+            <div class="contentbox">
+              <div class="table_wrapper scrollable">
+                <table class="table_panel">
+                  <thead>
+                  <tr>
+                    <th>Name</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Example-698b474d4f-6t8qb</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <!-- tab end -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="content_wrapper">
+      <nav class="footer_nav">
+        <h2 class="footer_logo"><img src="../../resources/images/layouts/logo_header.svg" alt="위기대응 클라우드 플랫폼"></h2>
+        <div class="footer_menu">
+          <a href="../terms/terms.html">이용약관</a>
+          <a href="../terms/service.html">서비스약관</a>
+          <a href="../terms/policy.html">운영정책</a>
+          <a href="../terms/private.html"><strong>개인정보처리방침</strong></a>
+        </div>
+      </nav>
+      <p class="copyright">
+        Copyright © 2022 Developers Cloud Emergency. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- 서비스 재시작 dialog start -->
+  <div class="pop_wrap hide" id="servicePop01">
+    <div class="pop_box">
+      <div class="pop_header"></div><!-- 필요없으면 삭제해도 됩니다. -->
+      <div class="pop_container">
+        <div class="pop_content">
+          <p class="pop_msg">사용중인 서비스를 재시작하시겠습니까?</p>
+        </div>
+      </div>
+      <div class="pop_footer">
+        <button type="button" class="btn_pop cancel" onclick="dialogClose('servicePop01')">취소</button>
+        <button type="button" class="btn_pop submit">확인</button>
+      </div>
+    </div>
+  </div>
+  <!-- 서비스 재시작 dialog end -->
+
+  <!-- 서비스 삭제 dialog start -->
+  <div class="pop_wrap hide" id="servicePop02">
+    <div class="pop_box">
+      <div class="pop_header"></div><!-- 필요없으면 삭제해도 됩니다. -->
+      <div class="pop_container">
+        <div class="pop_content">
+          <p class="pop_msg">사용중인 서비스를 삭제하시겠습니까?</p>
+        </div>
+      </div>
+      <div class="pop_footer">
+        <button type="button" class="btn_pop cancel" onclick="dialogClose('servicePop02')">취소</button>
+        <button type="button" class="btn_pop submit">확인</button>
+      </div>
+    </div>
+  </div>
+  <!-- 서비스 삭제 dialog end -->
+
+  <!-- 앱 이름 변경 dialog start -->
+  <div class="pop_wrap hide" id="servicePop03">
+    <div class="pop_box">
+      <div class="pop_header">
+        <h2 class="pop_header_title">앱 이름 변경</h2>
+      </div>
+      <div class="pop_container">
+        <div class="pop_content">
+          <ul class="list_form">
+            <li>
+              <label for="name" class="label_title">새로운 앱 이름</label>
+              <input type="text" id="name" placeholder="새로운 이름을 입력해주세요." class="form_textfield">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pop_footer">
+        <button type="button" class="btn_pop cancel" onclick="dialogClose('servicePop03')">취소</button>
+        <button type="button" class="btn_pop submit">확인</button>
+      </div>
+    </div>
+  </div>
+  <!-- 앱 이름 변경 dialog end -->
+</div>
+
+<!-- custom select -->
+<script src="../../resources/js/select.js"></script>
+
+<!-- app pop  -->
+<script>
+  const popMenu = function (){
+    document.querySelector('.js-popMenu').classList.toggle('hide');
+  }
+
+  <!--Dialog 열기/닫기-->
+  const dialogOpen = function(id){
+    document.getElementById(id).classList.remove("hide");
+    document.body.style.overflow = "hidden";
+  }
+
+  const dialogClose = function(id){
+    document.getElementById(id).classList.add("hide");
+    document.body.style.overflow = "auto";
+  }
+</script>
+
+<!-- 테스트용 삽입 -->
+<script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+<script>
+  function expandPanel(el){
+    $('.app_board .panel_comm').removeClass('expand');
+    $(el).parent().parent('.panel_comm').addClass('expand');
+  }
+</script>
+
+
+<!-- mobile nav -->
+<script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+<script src="../../resources/js/nav.js"></script>
+
+</body>
+</html>
