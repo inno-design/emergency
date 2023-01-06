@@ -184,3 +184,83 @@
     }
   }
 }
+
+/* digital data body */
+.board_body_data {
+  font-size: .938rem;
+}
+
+.board_tit_main {
+  font-size: 26px
+}
+
+.board_tit_sub {
+  margin: 1.5rem 0 .5rem;
+  font-size: 22px;
+}
+
+.board_text_main {
+  font-size: 17px;
+  color: #222;
+}
+
+.list_board {
+  margin: 1.5rem 0;
+
+  li {
+    position: relative;
+    padding-left: 15px;
+    margin: 3px 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 2px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #444;
+    }
+  }
+}
+
+.table_board {
+  width: 100%;
+  table-layout: fixed;
+  margin: 2rem 0;
+  border: 1px solid #dedede;
+  font-size: 1em;
+
+  th, td {
+    height: 50px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ededed;
+  }
+
+  th {
+    width: 15%;
+    background-color: #f7f7f7;
+    text-align: left;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  td {
+    word-break: break-all;
+  }
+
+  tr:last-of-type {
+    th, td {
+      border-bottom-width: 0;
+    }
+  }
+}
+
+.board_textarea {
+  width: 100%;
+  border: 0;
+  font-size: 1em;
+  resize: none;
+  outline: none;
+}

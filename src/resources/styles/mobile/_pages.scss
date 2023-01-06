@@ -170,6 +170,71 @@
   }
 }
 
+.board_body_data {
+  font-size: 12px;
+}
+
+.board_tit_main {
+  font-size: 18px
+}
+
+.board_tit_sub {
+  font-size: 16px;
+}
+
+.board_text_main {
+  font-size: 13px;
+}
+
+.list_board {
+  li {
+    padding-left: 12px;
+
+    &::before {
+      top: 7px;
+      left: 1px;
+      width: 4px;
+      height: 4px
+    }
+  }
+}
+
+.table_board {
+  display: block;
+  overflow: hidden;
+
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  th, td {
+    height: auto;
+    padding: 9px 14px;
+  }
+
+  th {
+    display: flex;
+    align-items: center;
+    width: 26%;
+    height: auto;
+  }
+
+  td {
+    display: flex;
+    align-items: center;
+    width: 74%;
+  }
+
+  tr:last-of-type {
+    margin-bottom: -1px;
+
+    th, td {
+      border-bottom-width: 1px;
+    }
+  }
+}
+
 /* gallery board */
 .gallery_wrapper {
   padding-top: 0;

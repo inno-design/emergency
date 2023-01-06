@@ -2623,6 +2623,78 @@ table {
   left: 1.333rem;
 }
 
+/* digital data body */
+.board_body_data {
+  font-size: 0.938rem;
+}
+
+.board_tit_main {
+  font-size: 26px;
+}
+
+.board_tit_sub {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 22px;
+}
+
+.board_text_main {
+  font-size: 17px;
+  color: #222;
+}
+
+.list_board {
+  margin: 1.5rem 0;
+}
+.list_board li {
+  position: relative;
+  padding-left: 15px;
+  margin: 3px 0;
+}
+.list_board li::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 2px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #444;
+}
+
+.table_board {
+  width: 100%;
+  table-layout: fixed;
+  margin: 2rem 0;
+  border: 1px solid #dedede;
+  font-size: 1em;
+}
+.table_board th, .table_board td {
+  height: 50px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ededed;
+}
+.table_board th {
+  width: 15%;
+  background-color: #f7f7f7;
+  text-align: left;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.table_board td {
+  word-break: break-all;
+}
+.table_board tr:last-of-type th, .table_board tr:last-of-type td {
+  border-bottom-width: 0;
+}
+
+.board_textarea {
+  width: 100%;
+  border: 0;
+  font-size: 1em;
+  resize: none;
+  outline: none;
+}
+
 .gallery_wrapper {
   padding: 40px 0;
   border-top: 2px solid #222;
